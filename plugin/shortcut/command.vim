@@ -1,9 +1,9 @@
 " help
-command Hb tabnew ~/.config/bash/help/vim/bassic.md
-command Hi tabnew ~/.config/nvim/conf/shortcut/insert.vim
-command Hn tabnew ~/.config/nvim/conf/shortcut/normal.vim
-command Hv tabnew ~/.config/nvim/conf/shortcut/visual.vim
-command Hc tabnew ~/.config/nvim/conf/shortcut/command.vim
+command Hb tabnew ~/.config/plugin/nvim-conf/help/vim/bassic.md
+command Hi tabnew ~/.config/plugin/nvim-conf/plugin/shortcut/insert.vim
+command Hn tabnew ~/.config/plugin/nvim-conf/plugin/shortcut/normal.vim
+command Hv tabnew ~/.config/plugin/nvim-conf/plugin/shortcut/visual.vim
+command Hc tabnew ~/.config/plugin/nvim-conf/plugin/shortcut/command.vim
 
 " Plugin install 
 command Smain tabnew ~/.config/nvim/conf/plug/main.vim
