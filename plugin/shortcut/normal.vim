@@ -91,9 +91,9 @@ map <Space>l 20zl
 " scroll righ
 map <Space>h 20zh 
 " firts line
-map <Space>i I<Esc>
+map <Space>i ^
 " last line
-map <Space>a A<Esc>
+map <Space>a $
 
 " Git ----------
 " Git files
