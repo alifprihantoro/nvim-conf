@@ -43,3 +43,5 @@ command Prettiern Neoformat
 command Prettier CocCommand prettier.formatFile
 " close all buffer without current
 command! Bda %bdelete|edit#|bdelete#
+" cd now
+command Cdn cd %:h
