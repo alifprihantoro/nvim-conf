@@ -2,12 +2,12 @@ let g:colors_name = "darcula"
 
 
 hi Cursor ctermfg=188 ctermbg=250 cterm=NONE guifg=#2b2b2b guibg=#a9b7c6 gui=NONE
-hi Visual ctermfg=NONE ctermbg=24 cterm=NONE guifg=NONE guibg=#214283 gui=NONE
-hi CursorLine ctermfg=NONE ctermbg=236 cterm=NONE guifg=NONE guibg=#323232 gui=NONE
-hi CursorColumn ctermfg=NONE ctermbg=234 cterm=NONE guifg=NONE guibg=#313335 gui=NONE
-hi ColorColumn ctermfg=NONE ctermbg=236 cterm=NONE guifg=NONE guibg=#313335 gui=NONE
-hi CursorLineNr ctermfg=NONE ctermbg=24 cterm=NONE guifg=NONE guibg=#214283 gui=NONE
-hi VertSplit ctermfg=60 ctermbg=236 cterm=NONE guifg=#555555 guibg=#323232 gui=NONE
+hi visual ctermfg=none ctermbg=24 cterm=none guifg=none guibg=#214283 gui=none
+hi cursorline ctermfg=none ctermbg=236 cterm=none guifg=none guibg=#323232 gui=none
+hi cursorcolumn ctermfg=none ctermbg=234 cterm=none guifg=none guibg=#313335 gui=none
+hi colorcolumn ctermfg=none ctermbg=236 cterm=none guifg=none guibg=#313335 gui=none
+hi cursorlinenr ctermfg=none ctermbg=24 cterm=none guifg=none guibg=#214283 gui=none
+hi vertsplit ctermfg=60 ctermbg=236 cterm=none guifg=#555555 guibg=#323232 gui=none
 hi MatchParen ctermfg=173 ctermbg=NONE cterm=underline guifg=#c57825 guibg=NONE gui=underline
 hi StatusLine ctermfg=67 ctermbg=236 cterm=bold guifg=#a9b7c6 guibg=#323232 gui=bold
 hi StatusLineNC ctermfg=188 ctermbg=236 cterm=NONE guifg=#a9b7c6 guibg=#323232 gui=NONE
