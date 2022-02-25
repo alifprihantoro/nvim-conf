@@ -51,18 +51,18 @@ nmap <C-Space><Space>f :cd %:p:h<CR>:Rg<CR>
 
 " tab
 " NERDTreeToggle
-nmap <C-t> :NERDTreeToggle<CR>
+nmap <Space>t :NERDTreeToggle<CR>
 " --------------
 " next tab
 nmap <Space><Space>n :tabnext<CR>
 " prev tab
 nmap <Space><Space>p :tabprevious<CR>
-" firts tab
-nmap <Space>tf :tabfirst<CR>
-" last tab
-nmap <Space>tl :tablast<CR>
-" new tab
-nmap <Space>tn :tabnew<CR>
+" " firts tab
+" nmap <Space>bf :tabfirst<CR>
+" " last tab
+" nmap <Space>bl :tablast<CR>
+" " new tab
+" nmap <Space>bn :tabnew<CR>
 " ------------
 " next
 nmap <Space>n :bn<CR>
