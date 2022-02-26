@@ -51,7 +51,7 @@ nmap <C-Space><Space>f :cd %:p:h<CR>:Rg<CR>
 
 " tab
 " NERDTreeToggle
-nmap <Space>t :NERDTreeToggle<CR>
+nmap <Space>e :NERDTreeToggle<CR>
 " --------------
 " next tab
 nmap <Space><Space>n :tabnext<CR>

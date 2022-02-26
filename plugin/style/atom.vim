@@ -8,7 +8,8 @@ hi cursorcolumn ctermfg=none ctermbg=234 cterm=none guifg=none guibg=#313335 gui
 hi colorcolumn ctermfg=none ctermbg=236 cterm=none guifg=none guibg=#313335 gui=none
 hi cursorlinenr ctermfg=none ctermbg=24 cterm=none guifg=none guibg=#214283 gui=none
 hi vertsplit ctermfg=60 ctermbg=236 cterm=none guifg=#555555 guibg=#323232 gui=none
-hi MatchParen ctermfg=173 ctermbg=NONE cterm=underline guifg=#c57825 guibg=NONE gui=underline
+" hi MatchParen ctermfg=173 ctermbg=NONE cterm=underline guifg=#c57825 guibg=NONE gui=underline
+hi MatchParen cterm=bold ctermfg=black ctermbg=4 gui=underline guifg=red
 hi StatusLine ctermfg=67 ctermbg=236 cterm=bold guifg=#a9b7c6 guibg=#323232 gui=bold
 hi StatusLineNC ctermfg=188 ctermbg=236 cterm=NONE guifg=#a9b7c6 guibg=#323232 gui=NONE
 hi Search term=reverse ctermfg=188 ctermbg=24 guifg=#a9b7c6 guibg=#214283 gui=none
