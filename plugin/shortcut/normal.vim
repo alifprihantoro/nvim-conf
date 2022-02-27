@@ -130,3 +130,6 @@ let PlugAdd=plug_home."/nvim-conf/add.vim"
 nmap <space>. :source `=PlugAdd`<CR>
 " config
 nnoremap <space>, :e `=PlugAdd`<CR>:Cdn<CR>
+" config
+nnoremap <space>m :!mkdir 
+

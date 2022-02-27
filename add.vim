@@ -1,5 +1,4 @@
 call plug#begin('~/.config/plugin')
-Plug 'alifprihantoro/vim-git'
 Plug 'alifprihantoro/vim-hugo', {'for': 'markdown' }
 " ---------- COC plug
 " Use release branch (recommend)
@@ -22,7 +21,6 @@ Plug 'robertbasic/vim-hugo-helper' , { 'for': 'markdown' }
 " ---------- bassic 
 Plug 'jiangmiao/auto-pairs' "this will auto close ( [ {
 " comment
-Plug 'preservim/nerdcommenter'
 " Markdown support
 Plug 'godlygeek/tabular', { 'for': 'markdown' }
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
@@ -40,8 +38,8 @@ Plug 'mattn/emmet-vim', { 'for': 'html' }
 Plug 'scrooloose/nerdtree' , { 'on':  'NERDTreeToggle' }|
             \ Plug 'Xuyuanp/nerdtree-git-plugin' , { 'on':  'NERDTreeToggle' }|
 " File Search
-  Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-  Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 " Wiki / to do list / note
 Plug 'vimwiki/vimwiki', { 'for': 'wiki' }
 " color warning
@@ -53,6 +51,7 @@ Plug 'AndrewRadev/tagalong.vim', { 'for': 'html' }
 " --------- tag matching
 Plug 'leafOfTree/vim-matchtag' , { 'for': 'html' }
 " -------------------------------------
+Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
 call plug#end()
 
 
