@@ -1,7 +1,7 @@
 " quit
 nmap qq :q
 " save
-nmap <C-s> :w<CR>
+nmap <Space>w :w<CR>
 " plug
 nmap ; :
 " refres
@@ -123,7 +123,10 @@ nmap <space>zc :set nofoldenable<CR>
 nmap <space>zf vtazf 
 " create folding in css/sass/js
 nmap <space>zt v%zf
-
 " enter link
 autocmd FileType markdown nmap <CR> gx
-
+" active plugin
+let PlugAdd=plug_home."/nvim-conf/add.vim"
+nmap <space>. :source `=PlugAdd`<CR>
+" config
+nnoremap <space>, :e `=PlugAdd`<CR>:Cdn<CR>

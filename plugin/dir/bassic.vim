@@ -5,3 +5,11 @@ command Dc cd ~/.myconfig
 " command Dv cd ~/.myconfig/nvim
 command Dsh cd ~/.ssh
 
+" normal :
+" space :
+" d:
+" w = web
+" z = zzz
+" v = vim init
+" c = myconfig
+"
