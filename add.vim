@@ -1,5 +1,4 @@
 call plug#begin('~/.config/plugin')
-Plug 'alifprihantoro/vim-hugo', {'for': 'markdown' }
 " ---------- COC plug
 " Use release branch (recommend)
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -15,16 +14,10 @@ Plug 'maxmellon/vim-jsx-pretty', { 'for': 'javascript' }
 " ---------- other ex
 "  toml
 Plug 'cespare/vim-toml', { 'for': 'toml' } 
-" hugo
-Plug 'robertbasic/vim-hugo-helper' , { 'for': 'markdown' }
 
 " ---------- bassic 
 Plug 'jiangmiao/auto-pairs' "this will auto close ( [ {
 " comment
-" Markdown support
-Plug 'godlygeek/tabular', { 'for': 'markdown' }
-Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
-Plug 'dhruvasagar/vim-table-mode', { 'for': 'markdown' }
 " html/emmet snippet
 Plug 'mattn/emmet-vim', { 'for': 'html' }
 
