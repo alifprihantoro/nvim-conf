@@ -73,7 +73,7 @@ nmap <Space>bf :bfirst<CR>
 " last
 nmap <Space>bl :blast<CR>
 " quit
-nmap <Space>bq :bdelete<CR>
+nmap <Space>bd :bdelete<CR>
 
 " vim wiki---------
 " toogle checklist fow vimwiki
