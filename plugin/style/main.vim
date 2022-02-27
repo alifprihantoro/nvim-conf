@@ -190,3 +190,14 @@ set background=dark
 " same word
 autocmd CursorMoved * exe printf('match IncSearch /\V\<%s\>/', escape(expand('<cword>'), '/\'))
 hi IncSearch ctermfg=black ctermbg=4
+
+" coc
+highlight CocFloating ctermbg=232
+highlight CocErrorFloat ctermfg=red
+" for bg sugestion list
+hi Pmenu ctermbg=235 ctermfg=242
+" for hover
+hi PmenuSel ctermbg=24 ctermfg=255
+" for scroll
+hi PmenuSbar ctermbg=255
+hi PmenuThumb guibg=245

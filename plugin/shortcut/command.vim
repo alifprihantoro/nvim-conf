@@ -45,3 +45,5 @@ command Prettier CocCommand prettier.formatFile
 command! Bda %bdelete|edit#|bdelete#
 " cd now
 command Cdn cd %:h
+" cd git root
+command Cdg exec 'cd' fnameescape(fnamemodify(finddir('.git', escape(expand('%:p:h'), ' ') . ';'), ':h'))
