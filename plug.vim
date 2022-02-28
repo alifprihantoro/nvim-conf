@@ -1,7 +1,10 @@
-call plug#begin('~/.config/plugin')
-Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
+" __________________________________________|
+exec "call plug#begin(\"". nvimplug . "\")"
+Plug 'alifprihantoro/nvim-conf'
+Plug 'liuchengxu/vim-which-key'
 Plug 'alifprihantoro/vim-git'
 Plug 'preservim/nerdcommenter'
+
 " hugo
 Plug 'alifprihantoro/vim-hugo', {'for': 'markdown' }
 Plug 'robertbasic/vim-hugo-helper' , { 'for': 'markdown' }

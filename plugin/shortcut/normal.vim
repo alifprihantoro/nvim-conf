@@ -1,135 +1,66 @@
+let mapleader = " "
 " quit
 nmap qq :q
 " save
-nmap <Space>w :w<CR>
-" plug
-nmap ; :
-" refres
-nmap <Space>r :edit!
-" nmap <Space>r <C-r>:cd %:p:h<CR>
-
-" buffer--------
-" copy all
-nmap ya ggVGy
-" cut all
-nmap da ggVGd
-" delete--------------
-" just delete
-nmap <BS> "_d
-nmap <Del> "_d
-" delete word before
-nmap <Space>re vb"_d
-" delete word after
-nmap <Space>rb ve"_d
-" delete line
-nmap <Space><Del> V"_d
-nmap <Space><BS> V"_d
-" delete all
-nmap <Space>ra ggVG"_d
-" clipboard-----------
-" paste
-nmap <C-p> "+p
-" copy word
-nmap <Space>yw bve"+y
-" copy line
-nmap <Space>yy bve"+y
-" copy all
-nmap <Space>ya ggVG"+y
-" cut all
-nmap <Space>da ggVG"+d
-
-" fuzzy
-" just title
-nmap <Space>f :FZF<CR>
-" with body
-nmap <Space><Space>f :Rg<CR>
-" just title and dir now
-nmap <C-Space>f :cd %:p:h<CR>:FZF<CR>
-" with body and dir now
-nmap <C-Space><Space>f :cd %:p:h<CR>:Rg<CR>
-
-
+nmap <leader>w :w<CR>
+let g:which_key_map['w'] = ['','Save' ]
 " tab
 " NERDTreeToggle
-nmap <Space>e :NERDTreeToggle<CR>
+nmap <leader>e :NERDTree<CR>
+let g:which_key_map['e'] = ['','Show File/Folder' ]
 " --------------
-" next tab
-nmap <Space><Space>n :tabnext<CR>
-" prev tab
-nmap <Space><Space>p :tabprevious<CR>
-" " firts tab
-" nmap <Space>bf :tabfirst<CR>
-" " last tab
-" nmap <Space>bl :tablast<CR>
-" " new tab
-" nmap <Space>bn :tabnew<CR>
-" ------------
-" next
-nmap <Space>n :bn<CR>
-" prev
-nmap <Space>p :bp<CR>
-" firts
-nmap <Space>bf :bfirst<CR>
-" last
-nmap <Space>bl :blast<CR>
-" quit
-nmap <Space>bd :bdelete<CR>
-
 " vim wiki---------
 " toogle checklist fow vimwiki
-nnoremap <Space>- :VimwikiToggleListItem<CR>
+autocmd FileType wiki nnoremap <leader>- :VimwikiToggleListItem<CR>
+autocmd FileType wiki let g:which_key_map['-'] = ['','Togle list' ]
 " change symbol
-nnoremap <Space>vs :VimwikiListChangeSymbolI 
+autocmd FileType wiki nnoremap <leader>vs :VimwikiListChangeSymbolI
+autocmd FileType wiki let g:which_key_map['vs'] = ['','Show File/Folder' ]
 
 " scroll -------
 " scroll up
-nmap <Space>k 10k
+nmap <leader>k 10k
+let g:which_key_map['k'] = ['','scroll up' ]
 " scroll down
-nmap <Space>j 10j
+nmap <leader>j 10j
+let g:which_key_map['j'] = ['','scroll down' ]
 " scroll left
-map <Space>l 20zl 
+map <leader>l 20zl
+let g:which_key_map['l'] = ['','scroll left' ]
 " scroll righ
-map <Space>h 20zh 
+map <leader>h 20zh
+let g:which_key_map['h'] = ['','scroll right' ]
 " firts line
-map <Space>i ^
+map <leader>i ^
+let g:which_key_map['i'] = ['','go to first line' ]
 " last line
-map <Space>a $
-
-" Git ----------
-" Git files
-nmap <Space>gf :GitFiles<CR>
-" Git log
-nmap <Space>gl :Gclog<CR>
-" Git Commit
-nmap <Space>gc :Gcommit<CR>
+map <leader>a $
+let g:which_key_map['a'] = ['','go to last line' ]
 
 " comment
-nmap <Space>/ <Space>c<Space>
+nmap <leader>/ <leader>c<leader>
 
 " replace ---------
 " replace
-nmap <Space>s :%s /
+nmap <leader>s :%s /
 
 " title case word per line
-nmap <Space>cw V:s/\<\(\w\)\(\w*\)\>/\u\1\L\2/g<CR> 
+nmap <leader>cw V:s/\<\(\w\)\(\w*\)\>/\u\1\L\2/g<CR>
 
 " pretier
 nmap ,f  <Plug>Neoformat
 
 " buka tutup / folding
 " close all folding
-nmap <space>zc :set nofoldenable<CR> 
+nmap <leader>zc :set nofoldenable<CR>
 " create folding in html
-nmap <space>zf vtazf 
+nmap <leader>zf vtazf
 " create folding in css/sass/js
-nmap <space>zt v%zf
+nmap <leader>zt v%zf
 " enter link
 autocmd FileType markdown nmap <CR> gx
 " active plugin
 let PlugAdd=plug_home."/nvim-conf/add.vim"
-nmap <space>. :source `=PlugAdd`<CR>
+nmap <leader>. :source `=PlugAdd`<CR>
 " config
-nnoremap <space>, :e `=PlugAdd`<CR>:Cdn<CR>
-" config
-nnoremap <space>m :!mkdir 
-
+nnoremap <leader>, :e `=PlugAdd`<CR>:Cdn<CR>
