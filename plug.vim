@@ -2,7 +2,7 @@
 exec "call plug#begin(\"". nvimplug . "\")"
 Plug 'alifprihantoro/nvim-conf'
 Plug 'liuchengxu/vim-which-key'
-Plug 'alifprihantoro/vim-git'
+" Plug 'alifprihantoro/vim-fugitive'
 Plug 'preservim/nerdcommenter'
 
 " hugo
