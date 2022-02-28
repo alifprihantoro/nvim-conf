@@ -8,8 +8,8 @@ nnoremap <leader>mc :!cp
 nnoremap <leader>mr :call delete(expand('%'))<CR>:bdelete<CR>
 let g:which_key_map['m']= {
       \ 'name' : '+modify' ,
-      \ 'd' : [''   , 'make dir']      ,
-      \ 'v' : [''   , 'move file']      ,
-      \ 'c' : [''   , 'copy file']      ,
-      \ 'r' : [''   , 'remove current file']      ,
+      \ 'd' : [' md'   , 'make dir']      ,
+      \ 'v' : [' mv'   , 'move file']      ,
+      \ 'c' : [' mc'   , 'copy file']      ,
+      \ 'r' : [' mr'   , 'remove current file']      ,
       \ }

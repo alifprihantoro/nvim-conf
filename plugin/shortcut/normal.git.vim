@@ -8,7 +8,7 @@ nmap <leader>gs :Gcommit<CR>
 " Git Checkout
 nmap <leader>gc :Gcommit<CR>
 let g:which_key_map.g = {
-      \ 'name' : '+Git' ,
+      \ 'name' : '+Git (cooming soon)' ,
       \ 'f' : [''   , 'git files']      ,
       \ 'l' : [''   , 'git log'],
       \ 's' : [''   , 'git commit'],

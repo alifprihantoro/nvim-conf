@@ -1,66 +1,66 @@
 let mapleader = " "
 " quit
-nmap qq :q
+nmap <leader>q :q
+nmap ; :
 " save
 nmap <leader>w :w<CR>
-let g:which_key_map['w'] = ['','Save' ]
+let g:which_key_map['w'] = ['w','Save' ]
 " tab
-" NERDTreeToggle
+" NERDTree
 nmap <leader>e :NERDTree<CR>
-let g:which_key_map['e'] = ['','Show File/Folder' ]
+let g:which_key_map['e'] = [':NERDTree','File Explorer' ]
 " --------------
 " vim wiki---------
 " toogle checklist fow vimwiki
 autocmd FileType wiki nnoremap <leader>- :VimwikiToggleListItem<CR>
-autocmd FileType wiki let g:which_key_map['-'] = ['','Togle list' ]
+autocmd FileType wiki let g:which_key_map['-'] = [':VimwikiToggleListItem','Togle list' ]
 " change symbol
 autocmd FileType wiki nnoremap <leader>vs :VimwikiListChangeSymbolI
-autocmd FileType wiki let g:which_key_map['vs'] = ['','Show File/Folder' ]
+autocmd FileType wiki let g:which_key_map['vs'] = [':VimwikiListChangeSymbolI','Show File/Folder' ]
 
 " scroll -------
 " scroll up
 nmap <leader>k 10k
-let g:which_key_map['k'] = ['','scroll up' ]
+let g:which_key_map['k'] = ['k','scroll up' ]
 " scroll down
 nmap <leader>j 10j
-let g:which_key_map['j'] = ['','scroll down' ]
+let g:which_key_map['j'] = ['j','scroll down' ]
 " scroll left
 map <leader>l 20zl
-let g:which_key_map['l'] = ['','scroll left' ]
+let g:which_key_map['l'] = ['l','scroll left' ]
 " scroll righ
 map <leader>h 20zh
-let g:which_key_map['h'] = ['','scroll right' ]
+let g:which_key_map['h'] = ['h','scroll right' ]
 " firts line
 map <leader>i ^
-let g:which_key_map['i'] = ['','go to first line' ]
+let g:which_key_map['i'] = ['^','go to first line' ]
 " last line
 map <leader>a $
-let g:which_key_map['a'] = ['','go to last line' ]
+let g:which_key_map['a'] = ['$','go to last line' ]
 
 " comment
 nmap <leader>/ <leader>c<leader>
+let g:which_key_map['/'] = [' c ','comment' ]
 
 " replace ---------
 " replace
 nmap <leader>s :%s /
+let g:which_key_map['s'] = [' s','search' ]
 
 " title case word per line
 nmap <leader>cw V:s/\<\(\w\)\(\w*\)\>/\u\1\L\2/g<CR>
-
+let g:which_key_map['cw'] = ['  cw','Word on line' ]
 " pretier
-nmap ,f  <Plug>Neoformat
-
+nmap <leader><Space>f  <Plug>Neoformat
 " buka tutup / folding
-" close all folding
-nmap <leader>zc :set nofoldenable<CR>
-" create folding in html
-nmap <leader>zf vtazf
-" create folding in css/sass/js
-nmap <leader>zt v%zf
 " enter link
 autocmd FileType markdown nmap <CR> gx
+autocmd FileType markdown let g:which_key_map['<CR>'] = ['gx','enter link' ]
 " active plugin
 let PlugAdd=plug_home."/nvim-conf/add.vim"
 nmap <leader>. :source `=PlugAdd`<CR>
+let g:which_key_map['.'] = [' .','add extend plug' ]
 " config
-nnoremap <leader>, :e `=PlugAdd`<CR>:Cdn<CR>
+let myconfig=plug_home."/nvim-conf/init.vim"
+nnoremap <leader>, :e `=myconfig`<CR>:Cdn<CR>
+let g:which_key_map[','] = [' ,','Go to Config' ]

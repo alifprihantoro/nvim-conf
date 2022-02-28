@@ -21,15 +21,6 @@ Plug 'jiangmiao/auto-pairs' "this will auto close ( [ {
 " html/emmet snippet
 Plug 'mattn/emmet-vim', { 'for': 'html' }
 
-" ---------- File
-" NERD Tree - tree explorer
-" (loaded on first invocation of the command)
-  Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-" File Explorer with Icons
-  Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-  Plug 'ryanoasis/vim-devicons', { 'on':  'NERDTreeToggle' }
-Plug 'scrooloose/nerdtree' , { 'on':  'NERDTreeToggle' }|
-            \ Plug 'Xuyuanp/nerdtree-git-plugin' , { 'on':  'NERDTreeToggle' }|
 " File Search
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'

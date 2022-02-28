@@ -10,8 +10,8 @@ imap <C-Space>v <Esc><C-v>
 " normal with :
 imap ;; <Esc>:
 " normal jj
-imap jj <Esc>
-imap jl j<Right>
+" imap jj <Esc>
+" imap jl j<Right>
 "---------
 " undo
 imap <C-Space>u <Esc>ui

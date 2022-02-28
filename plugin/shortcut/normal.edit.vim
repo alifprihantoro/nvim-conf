@@ -15,15 +15,15 @@ nmap <leader>rb ve"_d
 nmap <leader>ra ggVG"_d
 let g:which_key_map.r = {
       \ 'name' : '+delete' ,
-      \ 'a' : ['' , 'delete all text into clipboard']      ,
-      \ 'b' : ['' , 'delete word into clipboard (after)']      ,
-      \ 'e' : ['' , 'delete word into clipboard (before)']      ,
+      \ 'a' : ['ggVG"_d' , 'delete all text into clipboard']      ,
+      \ 'b' : ['ve"_d' , 'delete word into clipboard (after)']      ,
+      \ 'e' : ['vb"_d' , 'delete word into clipboard (before)']      ,
       \ }
 " delete line
 nmap <leader><Del> V"_d
-let g:which_key_map['<Del>'] = ['','delete one line' ]
+let g:which_key_map['<Del>'] = ['V"_d','delete one line' ]
 nmap <leader><BS> V"_d
-let g:which_key_map['<BS>'] = ['','delete one line' ]
+let g:which_key_map['<BS>'] = ['V"_d','delete one line' ]
 " clipboard-----------
 " paste
 nmap <C-p> "+p
@@ -33,8 +33,8 @@ nmap <leader>yy bve"+y
 nmap <leader>ya ggVG"+y
 let g:which_key_map.y = {
       \ 'name' : '+Copy' ,
-      \ 'y' : [''   , 'copy line into clipboard']      ,
-      \ 'a' : [''   , 'copy all text into clipboard']      ,
+      \ 'y' : ['bve"+y'   , 'copy line into clipboard']      ,
+      \ 'a' : ['ggVG"+y'   , 'copy all text into clipboard']      ,
       \ }
 " cut line
 nmap <leader>dy bve"+d
@@ -42,6 +42,6 @@ nmap <leader>dy bve"+d
 nmap <leader>da ggVG"+d
 let g:which_key_map.d = {
       \ 'name' : '+Cut' ,
-      \ 'y' : [''   , 'cut  line into clipboard']      ,
-      \ 'a' : [''   , 'cut  all text into clipboard']      ,
+      \ 'y' : ['ggVG"+d'   , 'cut  line into clipboard']      ,
+      \ 'a' : ['ggVG"+d'   , 'cut  all text into clipboard']      ,
       \ }
