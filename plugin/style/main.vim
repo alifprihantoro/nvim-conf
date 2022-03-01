@@ -1,15 +1,13 @@
 let g:colors_name = "darcula"
 " 48
 
-hi Cursor ctermfg=188 ctermbg=250 cterm=NONE guifg=#2b2b2b guibg=#a9b7c6 gui=NONE
+hi Cursor ctermfg=188 ctermbg=250 cterm=NONE guifg=#2b2b2b guibg=red gui=NONE
 hi visual ctermfg=none ctermbg=24 cterm=none guifg=none guibg=#214283 gui=none
-hi cursorline ctermfg=none ctermbg=16 cterm=none guifg=none guibg=#323232 gui=none
-hi cursorcolumn ctermfg=none ctermbg=16 cterm=none guifg=none guibg=#313335 gui=none
-hi colorcolumn ctermfg=none ctermbg=236 cterm=none guifg=none guibg=#313335 gui=none
+hi cursorline ctermfg=none ctermbg=233 cterm=none guifg=none guibg=#323232 gui=none
+hi cursorcolumn ctermfg=none ctermbg=233 cterm=none guifg=none guibg=#313335 gui=none
+hi colorcolumn ctermfg=none ctermbg=233 cterm=none guifg=none guibg=#313335 gui=none
 hi cursorlinenr ctermfg=none ctermbg=24 cterm=bold guifg=none guibg=#214283 gui=none
 hi vertsplit ctermfg=60 ctermbg=236 cterm=none guifg=#555555 guibg=#323232 gui=none
-" hi MatchParen ctermfg=173 ctermbg=NONE cterm=underline guifg=#c57825 guibg=NONE gui=underline
-" hi MatchParen cterm=bold ctermfg=black ctermbg=4 gui=underline guifg=red
 hi MatchParen cterm=bold ctermfg=50 ctermbg=17 gui=underline guifg=red
 hi matchTag cterm=bold ctermfg=50 ctermbg=17 gui=underline guifg=red
 hi StatusLine ctermfg=67 ctermbg=236 cterm=bold guifg=#a9b7c6 guibg=#323232 gui=bold
@@ -181,8 +179,8 @@ hi SpellLocal ctermfg=150 ctermbg=NONE cterm=undercurl guifg=#aeae80 guibg=NONE 
 hi NonText ctermfg=244 ctermbg=NONE cterm=NONE guifg=#8e9292 guibg=NONE gui=none
 
 " Highlighting for built-in tabs.
-hi TabLineFill ctermfg=146 ctermbg=16 cterm=NONE guifg=#a9b7c6 guibg=#2b2b2b gui=NONE
-hi TabLine ctermfg=146 ctermbg=16 cterm=NONE guifg=#a9b7c6 guibg=#2b2b2b gui=NONE
+hi TabLineFill ctermfg=146 ctermbg=236 cterm=NONE guifg=#a9b7c6 guibg=#2b2b2b gui=NONE
+hi TabLine ctermfg=146 ctermbg=236 cterm=NONE guifg=#a9b7c6 guibg=#2b2b2b gui=NONE
 hi TabLineSel ctermfg=146 ctermbg=59 cterm=NONE guifg=#a9b7c6 guibg=#515658 gui=NONE
 
 set background=dark

@@ -22,4 +22,5 @@ Plug 'mattn/emmet-vim', { 'for': 'html' }
 " " color warning
 Plug 'ap/vim-css-color', { 'for': 'css' }
 " -------------------------------------
+Plug 'liuchengxu/vim-which-key'
 call plug#end()

@@ -20,6 +20,8 @@ let g:nvimplug = "~/.config/plugin"
 exec "source " . nvimplug . "/nvim-conf/init.vim"
 ```
 3. press `:` and paste this `source %` then enter
-3. press `:` and paste this `PlugInstall` then enter
+4. press `:` and paste this `PlugInstall` then enter
+5. if you want install full plugin press `<Space>.:` and paste this `PlugInstall` then enter
+5. if you want install plugin coc like me press : and paste this `CocInstall coc-snippets coc-prettier coc-html coc-emmet coc-tsserver coc-tslint-plugin coc-json coc-css`
 ### keymap
 use **space** to show shortcut or go to **./help/more-shortcut.md**
