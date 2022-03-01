@@ -10,6 +10,7 @@ nmap <leader><leader><leader>ff :cd %:p:h<CR>:FZF<CR>
 nmap <leader><leader><leader>fd :cd %:p:h<CR>:Rg<CR>
 " extra shortcut
 let g:which_key_map[' ']= {
+      \ 'name':'+more',
       \ 'f' : [':Rg'   , 'Find text on all file']      ,
       \ ' ':{
       \ 'name':'+more',

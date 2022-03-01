@@ -59,9 +59,12 @@ autocmd FileType markdown nmap <CR> gx
 autocmd FileType markdown let g:which_key_map['<CR>'] = ['gx','enter link' ]
 " active plugin
 let PlugAdd=plug_home."/nvim-conf/add.vim"
-nmap <leader>. :source `=PlugAdd`<CR>
+nmap <leader>. :source `=PlugAdd`<CR>:e<CR>
 let g:which_key_map['.'] = [' .','add extend plug' ]
 " config
 let myconfig=plug_home."/nvim-conf/init.vim"
 nnoremap <leader>, :e `=myconfig`<CR>:Cdn<CR>
 let g:which_key_map[','] = [' ,','Go to Config' ]
+" wiki
+nnoremap <leader><leader>w :e ~/wiki/development/index.wiki<CR>
+let g:which_key_map[','] = ['  w','Go to wiki' ]

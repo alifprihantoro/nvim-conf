@@ -15,25 +15,11 @@ Plug 'maxmellon/vim-jsx-pretty', { 'for': 'javascript' }
 "  toml
 Plug 'cespare/vim-toml', { 'for': 'toml' } 
 
-" ---------- bassic 
-Plug 'jiangmiao/auto-pairs' "this will auto close ( [ {
 " comment
 " html/emmet snippet
 Plug 'mattn/emmet-vim', { 'for': 'html' }
 
-" File Search
-Plug 'junegunn/fzf'
-Plug 'junegunn/fzf.vim'
-" Wiki / to do list / note
-Plug 'vimwiki/vimwiki', { 'for': 'wiki' }
-" color warning
+" " color warning
 Plug 'ap/vim-css-color', { 'for': 'css' }
-" ---------- indentLine
-Plug 'lukas-reineke/indent-blankline.nvim'
-" --------- tag change
-Plug 'AndrewRadev/tagalong.vim', { 'for': 'html' }
-" --------- tag matching
-Plug 'leafOfTree/vim-matchtag' , { 'for': 'html' }
 " -------------------------------------
-Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
 call plug#end()
