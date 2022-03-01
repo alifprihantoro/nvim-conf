@@ -1,6 +1,7 @@
 let mapleader = " "
 " quit
 nmap <leader>q :q
+nmap qq :q
 nmap ; :
 " save
 nmap <leader>w :w<CR>

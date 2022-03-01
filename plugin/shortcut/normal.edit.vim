@@ -36,12 +36,3 @@ let g:which_key_map.y = {
       \ 'y' : ['bve"+y'   , 'copy line into clipboard']      ,
       \ 'a' : ['ggVG"+y'   , 'copy all text into clipboard']      ,
       \ }
-" cut line
-nmap <leader>dy bve"+d
-" cut all
-nmap <leader>da ggVG"+d
-let g:which_key_map.d = {
-      \ 'name' : '+Cut' ,
-      \ 'y' : ['ggVG"+d'   , 'cut  line into clipboard']      ,
-      \ 'a' : ['ggVG"+d'   , 'cut  all text into clipboard']      ,
-      \ }

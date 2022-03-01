@@ -201,3 +201,8 @@ hi PmenuSel ctermbg=24 ctermfg=255
 " for scroll
 hi PmenuSbar ctermbg=255
 hi PmenuThumb guibg=245
+" whickey
+hi WhichKey          cterm=bold
+hi WhichKeySeperator ctermfg=24
+hi WhichKeyGroup     ctermfg=159
+hi WhichKeyDesc      ctermfg=green
