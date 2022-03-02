@@ -12,21 +12,17 @@ Plug 'robertbasic/vim-hugo-helper' , { 'for': 'markdown' }
 Plug 'godlygeek/tabular', { 'for': 'markdown' }
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
 Plug 'dhruvasagar/vim-table-mode', { 'for': 'markdown' }
-
-
-
 " ---------- File
 " NERD Tree - tree explorer
 " (loaded on first invocation of the command)
   Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 " File Explorer with Icons
-  Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
   Plug 'ryanoasis/vim-devicons', { 'on':  'NERDTreeToggle' }
-Plug 'scrooloose/nerdtree' , { 'on':  'NERDTreeToggle' }|
-            \ Plug 'Xuyuanp/nerdtree-git-plugin' , { 'on':  'NERDTreeToggle' }|
+  Plug 'Xuyuanp/nerdtree-git-plugin' , { 'on':  'NERDTreeToggle' }
 " File Search
-Plug 'junegunn/fzf'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+
 " ---------- indentLine
 Plug 'lukas-reineke/indent-blankline.nvim'
 " Wiki / to do list / note
