@@ -2,34 +2,20 @@
 au InsertEnter * hi statusline guifg=black guibg=#d7afff ctermfg=none ctermbg=2
 au InsertLeave * hi statusline guifg=black guibg=#8fbfdc ctermfg=none ctermbg=blue
 hi statusline guifg=black guibg=#8fbfdc ctermfg=none ctermbg=blue
-
-" Status Line Custom
 let g:currentmode={
-    \ 'n'  : 'Normal',
-    \ 'no' : 'Normal·Operator Pending',
-    \ 'v'  : 'Visual',
-    \ 'V'  : 'V·Line',
-    \ '^V' : 'V·Block',
-    \ 's'  : 'Select',
-    \ 'S'  : 'S·Line',
-    \ '^S' : 'S·Block',
-    \ 'i'  : 'Insert',
-    \ 'R'  : 'Replace',
-    \ 'Rv' : 'V·Replace',
-    \ 'c'  : 'Command',
-    \ 'cv' : 'Vim Ex',
-    \ 'ce' : 'Ex',
-    \ 'r'  : 'Prompt',
-    \ 'rm' : 'More',
-    \ 'r?' : 'Confirm',
-    \ '!'  : 'Shell',
-    \ 't'  : 'Terminal'
-    \}
+       \ 'n'  : 'NORMAL ',
+       \ 'v'  : 'VISUAL ',
+       \ 'V'  : 'V·Line ',
+       \ "\<C-V>" : 'V·Block ',
+       \ 'i'  : 'INSERT ',
+       \ 'R'  : 'R ',
+       \ 'Rv' : 'V·Replace ',
+       \ 'c'  : 'Command ',
+       \}
 
 set laststatus=2
 set noshowmode
 set statusline=
-set statusline+=%0*\ %n\                                 " Buffer number
 set statusline+=%1*\ %<%F%m%r%h%w\                       " File path, modified, readonly, helpfile, preview
 set statusline+=%3*│                                     " Separator
 set statusline+=%=
