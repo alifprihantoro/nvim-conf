@@ -1,4 +1,3 @@
-exec "call plug#begin(\"". nvimplug . "\")"
 " ---------- COC plug
 " Use release branch (recommend)
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -22,5 +21,3 @@ Plug 'mattn/emmet-vim', { 'for': 'html' }
 " " color warning
 Plug 'ap/vim-css-color', { 'for': 'css' }
 " -------------------------------------
-Plug 'liuchengxu/vim-which-key'
-call plug#end()

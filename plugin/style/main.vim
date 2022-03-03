@@ -204,3 +204,4 @@ hi WhichKey          cterm=bold
 hi WhichKeySeperator ctermfg=24
 hi WhichKeyGroup     ctermfg=159
 hi WhichKeyDesc      ctermfg=green
+
