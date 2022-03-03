@@ -1,6 +1,8 @@
 " status bar colors
 au InsertEnter * hi statusline guifg=black guibg=#d7afff ctermfg=none ctermbg=2
+au InsertEnter * hi User1 ctermfg=none ctermbg=2
 au InsertLeave * hi statusline guifg=black guibg=#8fbfdc ctermfg=none ctermbg=blue
+au InsertLeave * hi User1 ctermfg=none ctermbg=blue
 hi statusline guifg=black guibg=#8fbfdc ctermfg=none ctermbg=blue
 let g:currentmode={
        \ 'n'  : 'NORMAL ',
