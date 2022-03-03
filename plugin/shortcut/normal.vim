@@ -65,4 +65,3 @@ nnoremap <leader>, :e `=myconfig`<CR>:Cdn<CR>
 let g:which_key_map[','] = [' ,','Go to Config' ]
 " wiki
 nnoremap <leader><leader>w :e ~/wiki/development/index.wiki<CR>
-let g:which_key_map[','] = ['  w','Go to wiki' ]

@@ -17,3 +17,5 @@ autocmd  FileType which_key set laststatus=0 noshowmode noruler
   \| autocmd BufLeave <buffer> set laststatus=2 noshowmode ruler
 " ignore vim shortcut
 " let g:which_key_map.1 = 'which_key_ignore'
+let g:which_key_position = 'botright'
+let g:which_key_hspace = 1
