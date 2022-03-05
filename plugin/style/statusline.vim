@@ -1,3 +1,4 @@
+set showtabline=0
 " status bar colors
 au InsertEnter * hi statusline guifg=black guibg=#d7afff ctermfg=none ctermbg=2
 au InsertEnter * hi User1 ctermfg=none ctermbg=2
@@ -13,6 +14,7 @@ let g:currentmode={
        \ 'R'  : 'R ',
        \ 'Rv' : 'V·Replace ',
        \ 'c'  : 'Command ',
+       \ 't'  : 'Command ',
        \}
 
 set laststatus=2

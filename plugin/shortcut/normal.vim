@@ -22,16 +22,16 @@ autocmd FileType wiki let g:which_key_map['vs'] = [':VimwikiListChangeSymbolI','
 " scroll -------
 " scroll up
 nmap <leader>k 10k
-let g:which_key_map['k'] = ['k','scroll up' ]
+let g:which_key_map['k'] = [' k','scroll up' ]
 " scroll down
 nmap <leader>j 10j
-let g:which_key_map['j'] = ['j','scroll down' ]
+let g:which_key_map['j'] = [' j','scroll down' ]
 " scroll left
 map <leader>l 20zl
-let g:which_key_map['l'] = ['l','scroll left' ]
+let g:which_key_map['l'] = [' l','scroll left' ]
 " scroll righ
 map <leader>h 20zh
-let g:which_key_map['h'] = ['h','scroll right' ]
+let g:which_key_map['h'] = [' h','scroll right' ]
 " firts line
 map <leader>i ^
 let g:which_key_map['i'] = ['^','go to first line' ]

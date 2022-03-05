@@ -21,6 +21,9 @@ Plug 'leafOfTree/vim-matchtag' , { 'for': 'html' }
 " ---------- bassic 
 Plug 'jiangmiao/auto-pairs' "this will auto close ( [ {
 Plug 'nvim-lua/plenary.nvim'
+
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
