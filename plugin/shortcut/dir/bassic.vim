@@ -1,5 +1,5 @@
 command De cd ~/
-command Zzz cd ~/.zzz
+" command Zzz cd ~/.zzz
 command Dc cd ~/.myconfig
 command Dsh cd ~/.ssh
 " cd now
