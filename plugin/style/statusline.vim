@@ -15,6 +15,7 @@ let g:currentmode={
        \ 'Rv' : 'V·Replace ',
        \ 'c'  : 'Command ',
        \ 't'  : 'Command ',
+       \ 's'  : 'Command ',
        \}
 
 set laststatus=2

@@ -1,6 +1,6 @@
+" ---------- bassic 
 Plug 'alifprihantoro/nvim-conf'
 Plug 'liuchengxu/vim-which-key'
-" Plug 'alifprihantoro/vim-fugitive'
 Plug 'preservim/nerdcommenter'
 
 " ---------- File
@@ -18,12 +18,9 @@ Plug 'vimwiki/vimwiki', { 'for': 'wiki' }
 Plug 'AndrewRadev/tagalong.vim', { 'for': 'html' }
 " --------- tag matching
 Plug 'leafOfTree/vim-matchtag' , { 'for': 'html' }
-" ---------- bassic 
-Plug 'jiangmiao/auto-pairs' "this will auto close ( [ {
-Plug 'nvim-lua/plenary.nvim'
-
-Plug 'nvim-telescope/telescope.nvim'
-Plug 'kyazdani42/nvim-web-devicons'
+" Plug 'nvim-lua/plenary.nvim'
+" Plug 'nvim-telescope/telescope.nvim'
+" Plug 'kyazdani42/nvim-web-devicons'
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
