@@ -4,7 +4,7 @@ let g:fzf_action = {
   \ 'ctrl-x': 'split',
   \ 'ctrl-v': 'vsplit' }
 let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.9, 'relative': v:true } }
-let $FZF_DEFAULT_COMMAND="find . -type f -not -path '*/\.git/*' ! -path '*/\node_modules/*'"
+let $FZF_DEFAULT_COMMAND="find . -type f -not -path '*/\.git/*' ! -path '*/node_modules/*'"
 " fuzzy
 
 " just title

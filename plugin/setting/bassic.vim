@@ -103,7 +103,7 @@ set t_BE=
 set nosc noru nosm
 " Don't redraw while executing macros (good performance config)
 set lazyredraw
-"set showmatch
+" set showmatch
 " How many tenths of a second to blink when matching brackets
 set mat=2
 " Ignore case when searching
@@ -186,3 +186,9 @@ endfunction
 " -------------- indent
 let g:indentLine_char_list = ['┆']
 " let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+"
+" Italics
+let &t_ZH="\e[3m"
+let &t_ZR="\e[23m"
+let g:vim_matchtag_enable_by_default = 0
+let g:vim_matchtag_files = '*.html,*.xml,*.js,*.jsx,*.vue,*.svelte,*.jsp'

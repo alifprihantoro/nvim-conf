@@ -4,6 +4,7 @@ nmap <Space>dm :cd ~/web/muryp-new<CR><CR>
 nmap <Space>dc :cd ~/.myconf/<CR><CR>
 nmap <Space>dv :cd ~/.config/nvim/<CR><CR>
 nmap <Space>dn :Cdn<CR><CR>
+nmap <Space>dg :Cdg<CR><CR>
 " cut line
 nmap <leader>dy bve"+d
 " cut all

@@ -3,7 +3,7 @@ exec "call plug#begin(\"". nvimplug . "\")"
 exec "source ".nvimplug."/nvim-conf/plug.vim"
 Plug 'jiangmiao/auto-pairs' 
 " Use release branch (recommend)
-Plug 'neoclide/coc.nvim', {'on': 'CocEnable','branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " ---------- js plug
 " these two plugins will add highlighting and indenting to JSX and TSX files.
 " syntax hi
@@ -33,3 +33,4 @@ Plug 'godlygeek/tabular', { 'for': 'markdown' }
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
 Plug 'dhruvasagar/vim-table-mode', { 'for': 'markdown' }
 call plug#end()
+exec "source " . nvimplug . "/nvim-conf/coc.vim"
