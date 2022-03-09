@@ -1,10 +1,10 @@
 let mapleader = " "
 " quit
-nmap <leader>q :q
-nmap qq :q
+nmap <leader>q :q<CR>
+nmap qq :q<CR>
 nmap ; :
 " save
-nmap <leader>w :w<CR>
+nmap <leader>w :w<CR>:e<CR>
 let g:which_key_map['w'] = ['w','Save' ]
 " tab
 " NERDTree

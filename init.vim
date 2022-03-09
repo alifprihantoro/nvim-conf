@@ -32,5 +32,8 @@ Plug 'robertbasic/vim-hugo-helper' , { 'for': 'markdown' }
 Plug 'godlygeek/tabular', { 'for': 'markdown' }
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
 Plug 'dhruvasagar/vim-table-mode', { 'for': 'markdown' }
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
+Plug 'rbong/vim-flog'
 call plug#end()
 exec "source " . nvimplug . "/nvim-conf/coc.vim"

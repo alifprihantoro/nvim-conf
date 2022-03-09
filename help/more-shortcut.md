@@ -14,6 +14,10 @@
 - / = search to bottom
 - ? = search to top
 - <number>G = 
+- cit = remove content and insert mode tag `<div>content</div>`
+- cat = delete all tag `<div>content<div>`
+- vat/vit = like cit and but not delete
+- lah
 
 ### insert
 - jj = to normal

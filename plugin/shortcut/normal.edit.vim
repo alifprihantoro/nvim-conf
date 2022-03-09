@@ -33,6 +33,6 @@ nmap <leader>yy bve"+y
 nmap <leader>ya ggVG"+y
 let g:which_key_map.y = {
       \ 'name' : '+Copy' ,
-      \ 'y' : ['bve"+y'   , 'copy line into clipboard']      ,
-      \ 'a' : ['ggVG"+y'   , 'copy all text into clipboard']      ,
+      \ 'y' : [' yy'   , 'copy line into clipboard']      ,
+      \ 'a' : [' ya'   , 'copy all text into clipboard']      ,
       \ }

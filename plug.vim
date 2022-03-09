@@ -24,3 +24,4 @@ Plug 'leafOfTree/vim-matchtag' , { 'for': 'html' }
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+" tes ini
