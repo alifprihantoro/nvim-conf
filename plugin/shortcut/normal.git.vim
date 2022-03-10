@@ -4,11 +4,19 @@ nmap <leader>gf :GitFiles<CR>
 " Git log
 nmap <leader>gl :Gclog<CR>
 " Git Push
-nmap <leader>gc :Gpush<CR>
+nmap <leader>gp :Git pushall<CR>
 " Git Commit
 nmap <leader>gs :Gcommit<CR>
 " Git Checkout
-nmap <leader>gc :Gcommit<CR>
+nmap <leader>gc :Git checkout 
+" Git commit and push
+function Gcommitpushall(commit)
+  execute "Cdg"
+  execute "Git add ."
+  execute "!git commit" a:commit
+endfunction
+
+command! -nargs=1 Gcommitpushall call Gcommitpushall(<f-args>)
 
 " hilight
 " diff
