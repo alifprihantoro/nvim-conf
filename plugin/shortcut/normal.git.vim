@@ -20,8 +20,10 @@ nmap <leader>gc :Git checkout
 
 let g:which_key_map.g = {
       \ 'name' : '+Git (cooming soon)' ,
-      \ 'f' : [' gf'   , 'git files']      ,
-      \ 'l' : [' gl'   , 'git log'],
-      \ 'c' : [' gc'   , 'git checkout'],
-      \ 'p' : [' gp'   , 'git checkout'],
+      \ 'a' : [' ga'   , 'add .']      ,
+      \ 'f' : [' gf'   , 'files']      ,
+      \ 'l' : [' gl'   , 'log'],
+      \ 'c' : [' gc'   , 'checkout'],
+      \ 's' : [' gs'   , 'add and commit'],
+      \ 'p' : [' gp'   , 'pushall'],
       \ }
