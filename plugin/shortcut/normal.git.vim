@@ -14,14 +14,13 @@ nmap <leader>gs :call Gaddcommit()<CR>
 " Git Checkout
 nmap <leader>gc :Git checkout 
 " git add commit and pushall
-command! -nargs=1 GaddCommitPush call GaddCommitPush(<f-args>)
 nmap <leader>gg :GaddCommitPush 
 
 " git tag/versioning
 " add, commit, tag, pushall
 nmap <leader>gtt :Versioning 
 " list tag
-nmap <leader>gtt :Git tag --list<CR> 
+nmap <leader>gtl :Git tag --list<CR> 
 
 let g:which_key_map.g = {
       \ 'name' : '+Git' ,
