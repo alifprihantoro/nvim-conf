@@ -19,10 +19,9 @@ nmap <leader>gq :wq<CR>
 nmap <leader>gc :Git checkout 
 
 function GaddCommitPush(commit)
-  " execute "Git add ."
-  " execute "!git commit -am" a:commit
+  execute "Git add ."
   execute "!git commit -am \"".a:commit."\""
-  " execute "Git pushall"
+  execute "Git pushall"
 endfunction
 
 " hilight
