@@ -7,28 +7,24 @@ nmap <leader>gl :Gclog<CR>
 nmap <leader>gp :Git pushall<CR>
 " add
 nmap <leader>ga :Git add .<CR>
-function Gaddcommit()
-  execute "Git add ."
-  execute "Git commit"
-endfunction
-
-nmap <leader>gs :call Gaddcommit()<CR>
 " Git exit Commit
 nmap <leader>gq :wq<CR>
+" git add and commit but in vim
+nmap <leader>gs :call Gaddcommit()<CR>
 " Git Checkout
 nmap <leader>gc :Git checkout 
-
 " git add commit and pushall
-function GaddCommitPush(commit)
-  execute "Git add ."
-  execute "!git commit -am \"".a:commit."\""
-  execute "Git pushall"
-endfunction
 command! -nargs=1 GaddCommitPush call GaddCommitPush(<f-args>)
 nmap <leader>gg :GaddCommitPush 
 
+" git tag/versioning
+" add, commit, tag, pushall
+nmap <leader>gtt :Versioning 
+" list tag
+nmap <leader>gtt :Git tag --list<CR> 
+
 let g:which_key_map.g = {
-      \ 'name' : '+Git (cooming soon)' ,
+      \ 'name' : '+Git' ,
       \ 'a' : [' ga'   , 'add .']      ,
       \ 'q' : [' gq'   , 'quit to commit']      ,
       \ 'g' : [' gg'   , 'add,commit,pushall']      ,
@@ -37,4 +33,11 @@ let g:which_key_map.g = {
       \ 'c' : [' gc'   , 'checkout'],
       \ 's' : [' gs'   , 'add and commit'],
       \ 'p' : [' gp'   , 'pushall'],
+      \ 't' : {
+        \ 'name': '+versioning',
+        \ 't' : [' gtt'   , '<v.1.1.1> <commit>'],
+        \ 'l' : [' gtl'   , 'Tag List'],
+      \ },
       \ }
+
+         " 'a' : [' gta'   , '<ma|mi|pa> <commit>'],
