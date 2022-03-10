@@ -13,8 +13,8 @@ function Gaddcommit()
 endfunction
 
 nmap <leader>gs :call Gaddcommit()<CR>
-" Git exit Commit and pushaltl
-nmap <leader>gq :w<CR>:Git pushall<CR>
+" Git exit Commit
+nmap <leader>gq :wq<CR>
 " Git Checkout
 nmap <leader>gc :Git checkout 
 
@@ -25,6 +25,7 @@ nmap <leader>gc :Git checkout
 let g:which_key_map.g = {
       \ 'name' : '+Git (cooming soon)' ,
       \ 'a' : [' ga'   , 'add .']      ,
+      \ 'q' : [' gq'   , 'quit to commit']      ,
       \ 'f' : [' gf'   , 'files']      ,
       \ 'l' : [' gl'   , 'log'],
       \ 'c' : [' gc'   , 'checkout'],
