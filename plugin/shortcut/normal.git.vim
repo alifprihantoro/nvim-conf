@@ -7,9 +7,12 @@ nmap <leader>gl :Gclog<CR>
 nmap <leader>gp :Git pushall<CR>
 " add
 nmap <leader>ga :Git add .<CR>
-" Git Commit
-command! Gaddcommit nmap Git add . | Git commit
-nmap <leader>gs :Gaddcommit<CR>
+function Gaddcommit()
+  execute "Git add ."
+  execute "Git commit"
+endfunction
+
+nmap <leader>gs :call Gaddcommit()<CR>
 " Git exit Commit and pushaltl
 nmap <leader>gq :bd<CR>:Git pushall<CR>
 " Git Checkout
