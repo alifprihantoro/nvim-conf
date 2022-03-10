@@ -14,8 +14,7 @@ endfunction
 
 nmap <leader>gs :call Gaddcommit()<CR>
 " Git exit Commit and pushaltl
-nmap <leader>gq :wq<CR>:
-
+nmap <leader>gq :w<CR>:Git pushall<CR>
 " Git Checkout
 nmap <leader>gc :Git checkout 
 
