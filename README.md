@@ -7,7 +7,15 @@
 - fzf
 
 ### Feature
-- theme
+- status line
+- color scheme
+- html :
+  - tag completion (snippet)
+  - tagalong
+  - tagmatching
+- 
+- fzf and regrep
+- wiki (like to do list)
 - Git
 - git versioning
 - git flow

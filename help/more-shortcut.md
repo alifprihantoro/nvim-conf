@@ -17,7 +17,8 @@
 - cit = remove content and insert mode tag `<div>content</div>`
 - cat = delete all tag `<div>content<div>`
 - vat/vit = like cit and but not delete
-- lah
+- V> then . to repeat
+- after V> do gv to repeat visual
 
 ### insert
 - jj = to normal
