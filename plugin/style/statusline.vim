@@ -1,3 +1,20 @@
+function! StatuslineGitBranch()
+  let b:gitbranch=""
+  if &modifiable
+    lcd %:p:h
+    let l:gitrevparse=system("git rev-parse --abbrev-ref HEAD")
+    lcd -
+    if l:gitrevparse!~"fatal: not a git repository"
+      let b:gitbranch=substitute(l:gitrevparse, '\n', '', 'g')
+    endif
+  endif
+endfunction
+
+augroup GetGitBranch
+  autocmd!
+  autocmd VimEnter,WinEnter,BufEnter * call StatuslineGitBranch()
+augroup END
+
 set showtabline=0
 " status bar colors
 au InsertEnter * hi statusline guifg=black guibg=#d7afff ctermfg=none ctermbg=2
@@ -26,6 +43,7 @@ set statusline+=%3*│                                     " Separator
 set statusline+=%=
 set statusline+=%3*│                                     " Separator
 set statusline+=%3*│                                     " Separator
+set statusline+=%4*\ %{b:gitbranch}\       " include git branch
 set statusline+=%0*\ %{toupper(g:currentmode[mode()])}\  " The current mode
 
 hi link User1 Visual

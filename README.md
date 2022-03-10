@@ -5,6 +5,14 @@
 - coc
 - Plug vim 
 - fzf
+
+### Feature
+- theme
+- Git
+- git versioning
+- git flow
+- status line
+
 ### Install
 1. copy and paste on your terminal
 ```bash
@@ -25,3 +33,4 @@ exec "source " . nvimplug . "/nvim-conf/init.vim"
 5. if you want install plugin coc like me press : and paste this `CocInstall coc-snippets coc-prettier coc-html coc-emmet coc-tsserver coc-tslint-plugin coc-json coc-css`
 ### keymap
 use **space** to show shortcut or go to **./help/more-shortcut.md**
+
