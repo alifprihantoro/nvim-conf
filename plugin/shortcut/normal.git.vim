@@ -18,6 +18,7 @@ nmap <leader>gq :w<CR>:Git pushall<CR>
 " Git Checkout
 nmap <leader>gc :Git checkout 
 
+
 " hilight
 " diff
 
