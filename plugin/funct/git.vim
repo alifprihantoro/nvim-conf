@@ -26,5 +26,6 @@ function! Gflow(branch)
   execute "let BranchBefore=system(\"git rev-parse --abbrev-ref HEAD\")"
   execute "!git checkout ".a:branch
   execute "!git merge ".BranchBefore
+  execute "e"
 endfunction
 command! -nargs=1 Gflow call Gflow(<f-args>)
