@@ -38,9 +38,11 @@ let g:which_key_map.g = {
       \ 'c' : [' gc'   , 'checkout'],
       \ 's' : [' gs'   , 'add and commit'],
       \ 'p' : [' gp'   , 'pushall'],
+      \ 'h' : [' gh'   , 'Help'],
+      \ 'v' : [' gv'   , 'Versioning'],
       \ 't' : {
         \ 'name': '+versioning',
-        \ 't' : [' gtt'   , '<v.1.1.1> <commit>'],
+        \ 't' : [' gtt'   , 'Add ver.'],
         \ 'l' : [' gtl'   , 'Tag List'],
       \ },
       \ }
