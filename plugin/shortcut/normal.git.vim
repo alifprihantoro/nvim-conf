@@ -20,12 +20,12 @@ nmap <leader>gg :GaddCommitPush
 " add, commit, tag, pushall
 nmap <leader>gtt :Versioning 
 " list tag
-nmap <leader>gtl :Git tag --list<CR> 
+nmap <leader>gtl :Git tag --list<CR>
 
 " git flow
 nmap <leader>gv :GitFlowStart 
 " help
-nmap <leader>gh :Ghelp<CR> 
+nmap <leader>gh :Ghelp<CR>
 
 
 let g:which_key_map.g = {

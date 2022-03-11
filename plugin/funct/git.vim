@@ -19,4 +19,4 @@ endfunction
 command! -nargs=* Versioning call Versioning(<f-args>)
 
 " git help
-command! Ghelp execute "e ". nvimplug ."/nvim-conf/help/git.wiki" 
+command! Ghelp execute "e ". nvimplug ."/nvim-conf/help/git/index.wiki" 
