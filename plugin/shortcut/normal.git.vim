@@ -12,7 +12,8 @@ nmap <leader>gq :wq<CR>
 " git add and commit but in vim
 nmap <leader>gs :call Gaddcommit()<CR>
 " Git Checkout
-nmap <leader>gc :Git checkout 
+command! Gcheckfzf execute "call fzf#run({'source': 'source ".nvimplug."/nvim-conf/git-flow.sh','sink':'Gcheck' })"
+nmap <leader>gc :Gcheckfzf<CR> 
 " git add commit and pushall
 nmap <leader>gg :GaddCommitPush 
 

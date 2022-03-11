@@ -21,6 +21,13 @@ command! -nargs=* Versioning call Versioning(<f-args>)
 " git help
 command! Ghelp execute "e ". nvimplug ."/nvim-conf/help/git/home.wiki" 
 
+" checkout
+function! Gcheck(branch)
+  execute "!git checkout ".a:branch
+  execute "e"
+endfunction
+command! -nargs=1 Gcheck call Gcheck(<f-args>)
+
 " flow
 function! Gflow(branch)
   execute "let BranchBefore=system(\"git rev-parse --abbrev-ref HEAD\")"
