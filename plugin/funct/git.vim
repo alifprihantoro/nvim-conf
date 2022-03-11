@@ -24,8 +24,8 @@ command! Ghelp execute "e ". nvimplug ."/nvim-conf/help/git/home.wiki"
 " flow
 function! Gflow(branch)
   execute "let BranchBefore=system(\"git rev-parse --abbrev-ref HEAD\")"
-  execute "Git checkout ".a:branch
-  execute "Git merge ".BranchBefore
+  execute "!git checkout ".a:branch
+  execute "!git merge ".BranchBefore
 endfunction
 command! -nargs=1 Gflow call Gflow(<f-args>)
 nmap <leader>gv :call fzf#run({'source': 'source ~/tes.sh','sink':'Gflow' })<CR>
