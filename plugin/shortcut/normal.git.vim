@@ -23,9 +23,9 @@ nmap <leader>gtt :Versioning
 nmap <leader>gtl :Git tag --list<CR> 
 
 " git flow
-nmap <leader>gbv :GitFlowStart 
+nmap <leader>gv :GitFlowStart 
 " help
-nmap <leader>gbh :Ghelp<CR> 
+nmap <leader>gh :Ghelp<CR> 
 
 
 let g:which_key_map.g = {
