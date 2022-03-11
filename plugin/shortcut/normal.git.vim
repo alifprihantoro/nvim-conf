@@ -23,7 +23,7 @@ nmap <leader>gtt :Versioning
 nmap <leader>gtl :Git tag --list<CR>
 
 " git flow
-nmap <leader>gv :Gflow 
+" nmap <leader>gv :Gflow
 " help
 nmap <leader>gh :Ghelp<CR>
 
