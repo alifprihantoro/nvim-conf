@@ -36,4 +36,4 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'rbong/vim-flog'
 call plug#end()
-exec "source " . nvimplug . "/nvim-conf/coc.vim"
+exec "source " . nvimplug . "/nvim-conf/coc.wiki"

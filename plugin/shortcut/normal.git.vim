@@ -22,6 +22,12 @@ nmap <leader>gtt :Versioning
 " list tag
 nmap <leader>gtl :Git tag --list<CR> 
 
+" git flow
+nmap <leader>gbv :GitFlowStart 
+" help
+nmap <leader>gbh :GitHelp 
+
+
 let g:which_key_map.g = {
       \ 'name' : '+Git' ,
       \ 'a' : [' ga'   , 'add .']      ,

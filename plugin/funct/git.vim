@@ -17,3 +17,6 @@ function! Versioning(ver, commit)
   execute "Git -a ".a:ver." -m \"".a:commit."\""
 endfunction
 command! -nargs=* Versioning call Versioning(<f-args>)
+
+" git help
+command! Ghelp execute "e ". nvimplug ."/nvim-conf/help/git.wiki" 
