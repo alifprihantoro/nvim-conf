@@ -39,7 +39,7 @@ let g:which_key_map.g = {
       \ 's' : [' gs'   , 'add and commit'],
       \ 'p' : [' gp'   , 'pushall'],
       \ 'h' : [' gh'   , 'Help'],
-      \ 'v' : [' gv'   , 'Versioning'],
+      \ 'v' : [' gv'   , 'Flow'],
       \ 't' : {
         \ 'name': '+versioning',
         \ 't' : [' gtt'   , 'Add ver.'],

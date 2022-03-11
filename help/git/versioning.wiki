@@ -1,7 +1,14 @@
+[[home]]
+[[bassic]]
+[[versioning]]
+[[flow]]
+
 # tag versioning
 auto :
-- `Versioning <ver> <comment/commit>` auto tag with comment
--
+- `Versioning <ver> <comment/commit>` add tag with comment
+  - for plit ver and comment use <Space>
+  - If U want use `space` on your comment or tag use `\ ` and enter `\n`
+
 original :
 - `Git tag `: list tag all
 - `Git tag -l "v1*"` git tag list v1*
