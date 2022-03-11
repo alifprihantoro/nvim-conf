@@ -27,14 +27,3 @@ function! Gflow(branch)
 endfunction
 command! -nargs=* Gflow call Gflow(<f-args>)
 nmap <leader>gv :call fzf#run({'sink':'Gflow ','source': 'ls'})
-
-
-
-
-
-
-
-
-
-
-call fzf#run({'source': 'thisBranchName=$(git branch) && thisBranchName=$thisBranchName:s/*/\ && echo $thisBranchName','sink':'let var = ' })
