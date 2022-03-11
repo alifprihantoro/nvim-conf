@@ -20,3 +20,21 @@ command! -nargs=* Versioning call Versioning(<f-args>)
 
 " git help
 command! Ghelp execute "e ". nvimplug ."/nvim-conf/help/git/home.wiki" 
+
+" flow
+function! Gflow(branch)
+  execute "echo \"".a:branch."\""
+endfunction
+command! -nargs=* Gflow call Gflow(<f-args>)
+nmap <leader>gv :call fzf#run({'sink':'Gflow ','source': 'ls'})
+
+
+
+
+
+
+
+
+
+
+call fzf#run({'source': 'thisBranchName=$(git branch) && thisBranchName=$thisBranchName:s/*/\ && echo $thisBranchName','sink':'let var = ' })

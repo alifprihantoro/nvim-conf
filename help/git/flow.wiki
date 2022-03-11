@@ -4,4 +4,4 @@
 [[flow]]
 
 # git flow
-- G
+- Gflow
