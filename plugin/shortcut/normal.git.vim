@@ -23,7 +23,8 @@ nmap <leader>gtt :Versioning
 nmap <leader>gtl :Git tag --list<CR>
 
 " git flow
-" nmap <leader>gv :Gflow
+command! Gflowfzf execute "call fzf#run({'source': 'source ".nvimplug."/nvim-conf/git-flow.sh','sink':'Gflow' })"
+nmap <leader>gv :Gflowfzf<CR>
 " help
 nmap <leader>gh :Ghelp<CR>
 

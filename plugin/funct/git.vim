@@ -28,4 +28,3 @@ function! Gflow(branch)
   execute "!git merge ".BranchBefore
 endfunction
 command! -nargs=1 Gflow call Gflow(<f-args>)
-nmap <leader>gv :call fzf#run({'source': 'source ~/tes.sh','sink':'Gflow' })
