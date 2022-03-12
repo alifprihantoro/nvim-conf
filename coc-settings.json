@@ -1,0 +1,12 @@
+{
+  "snippets.ultisnips.enable": false,
+  "snippets.extends": {
+    "cpp": ["c"],
+    "javascriptreact": ["javascript"],
+    "typescript": ["javascript"],
+    "html": ["tailwind"],
+    "css": ["tailwind"],
+    "scss": ["tailwind"],
+    "sass": ["tailwind"]
+  }
+}
