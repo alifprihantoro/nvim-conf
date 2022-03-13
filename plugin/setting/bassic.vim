@@ -75,7 +75,6 @@ scriptencoding utf-8
 if !1 | finish | endif
 
 set number
-set nocompatible
 syntax enable
 set fileencodings=utf-8,sjis,euc-id,latin
 set encoding=utf-8

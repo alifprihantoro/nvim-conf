@@ -26,12 +26,12 @@ Plug 'mattn/emmet-vim', { 'for': 'html' }
 " -------------------------------------
 
 " hugo
-Plug 'alifprihantoro/vim-hugo', {'for': 'markdown' }
-Plug 'robertbasic/vim-hugo-helper' , { 'for': 'markdown' }
+Plug 'alifprihantoro/vim-hugo', {'for': 'vimwiki' }
+Plug 'robertbasic/vim-hugo-helper' , { 'for': 'vimwiki' }
 " Markdown support
-Plug 'godlygeek/tabular', { 'for': 'markdown' }
-Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
-Plug 'dhruvasagar/vim-table-mode', { 'for': 'markdown' }
+Plug 'godlygeek/tabular', { 'for': 'vimwiki' }
+Plug 'plasticboy/vim-markdown', { 'for': 'vimwiki' }
+" Plug 'dhruvasagar/vim-table-mode', { 'for': 'markdown' }
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'rbong/vim-flog'

@@ -13,7 +13,7 @@ Plug 'preservim/nerdcommenter'
 " ---------- indentLine
 Plug 'lukas-reineke/indent-blankline.nvim'
 " Wiki / to do list / note
-Plug 'vimwiki/vimwiki', { 'for': 'wiki' }
+Plug 'vimwiki/vimwiki'
 " --------- tag change
 Plug 'AndrewRadev/tagalong.vim', { 'for': 'html' }
 " --------- tag matching
