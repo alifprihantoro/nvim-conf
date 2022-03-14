@@ -23,12 +23,3 @@ let g:which_key_map[' ']= {
       \ 'f' : [':Rg'   , 'Find text on all file']      ,
       \ 'w' : ['  w'   , 'Go to vim wiki']      ,
       \ }
-
-
-
-
-
-
-
-
-

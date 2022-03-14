@@ -1,3 +1,5 @@
+home
+
 ## shortcut
 > NB : upperchase and lowerchase
 ### normal
