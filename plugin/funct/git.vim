@@ -5,7 +5,6 @@ endfunction
 
 " git add commit and pushall
 function GaddCommitPush(commit)
-  execute "Gssh"
   execute "Git add ."
   execute "!git commit -am \"".a:commit."\""
   execute "Gpushall"
