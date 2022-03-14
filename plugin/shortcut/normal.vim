@@ -21,17 +21,17 @@ autocmd FileType wiki let g:which_key_map['vs'] = [':VimwikiListChangeSymbolI','
 
 " scroll -------
 " scroll up
-nmap <C-k> 10k
+map <C-k> 10k
 " scroll down
-nmap <C-j> 10j
+map <C-j> 10j
 " scroll left
-nmap <C-l> 20zl
+map <C-l> 20zl
 " scroll righ
-nmap <C-h> 20zh
+map <C-h> 20zh
 " firts line
-nmap <C-i> ^
+map <C-i> ^
 " last line
-nmap <C-a> $
+map <C-a> $
 
 " comment
 nmap <leader>/ <leader>c<leader>
