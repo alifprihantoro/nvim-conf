@@ -8,7 +8,7 @@ function GaddCommitPush(commit)
   execute "Gssh"
   execute "Git add ."
   execute "!git commit -am \"".a:commit."\""
-  execute "Git pushall"
+  execute "Gpushall"
 endfunction
 command! -nargs=1 GaddCommitPush call GaddCommitPush(<f-args>)
 
@@ -38,4 +38,4 @@ function! Gflow(branch)
 endfunction
 command! -nargs=1 Gflow call Gflow(<f-args>)
 " ssh
-command! Gssh !eval "$(ssh-agent -s)" && ssh-add ~/.ssh/github 
+command! Gpushall !eval "$(ssh-agent -s)" && ssh-add ~/.ssh/github && git pushall
