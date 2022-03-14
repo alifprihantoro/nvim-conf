@@ -5,6 +5,7 @@ endfunction
 
 " git add commit and pushall
 function GaddCommitPush(commit)
+  execute "Gssh"
   execute "Git add ."
   execute "!git commit -am \"".a:commit."\""
   execute "Git pushall"
@@ -36,3 +37,9 @@ function! Gflow(branch)
   execute "e"
 endfunction
 command! -nargs=1 Gflow call Gflow(<f-args>)
+
+function! Gssh()
+  execute "!eval \"$(ssh-agent -s)\""
+  execute "!ssh-add ~/.ssh/github"
+endfunction
+command! Gssh call Gssh()
