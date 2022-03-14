@@ -6,10 +6,14 @@ nmap <leader>> <C-w>>
 let g:which_key_map['>'] = [ ' >'  , 'Size screen left' ]
 nmap <leader>< <C-w><
 let g:which_key_map['<'] = [ ' <'  , 'Size screen right' ]
-nmap <leader><leader>l <C-w>l
-nmap <leader><leader>h <C-w>h
-nmap <leader><leader>j <C-w>j
-nmap <leader><leader>k <C-w>k
+nmap <leader>l <C-w>l
+let g:which_key_map['l'] = ['$','go to screen right' ]
+nmap <leader>h <C-w>h
+let g:which_key_map['h'] = ['$','go to screen left' ]
+nmap <leader>j <C-w>j
+let g:which_key_map['j'] = ['$','go to screen down' ]
+nmap <leader>k <C-w>k
+let g:which_key_map['k'] = ['$','go to screen top' ]
 
 " vsplit to open on split vertical
 " split to open on split horizontal
