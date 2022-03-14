@@ -1,4 +1,3 @@
-imap jj <Esc>
 " prev
 nmap <leader>p :bp<CR>
 let g:which_key_map['p'] = [ ':bp'  , '<== prev' ]

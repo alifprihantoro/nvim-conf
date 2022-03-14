@@ -12,5 +12,4 @@ let g:vimwiki_key_mappings = {
             \ 'html': 1,
             \ 'mouse': 0,
             \ }
-inoremap <silent><expr> <C-j> pumvisible() ? coc#_select_confirm()
-                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+

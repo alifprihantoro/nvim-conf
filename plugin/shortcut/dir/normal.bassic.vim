@@ -19,5 +19,5 @@ let g:which_key_map.d = {
       \ 'n' : [' dn'     , 'Go to folder current dir']      ,
       \ 'g' : [' dg'     , 'Go to folder current root git']      ,
       \ 'y' : ['ggVG"+d'   , 'cut  line into clipboard']      ,
-      \ 'a' : ['ggVG"+d'   , 'cut  all text into clipboard']      ,
+      \ 'a' : [' da'   , 'cut  all text into clipboard']      ,
       \ }
