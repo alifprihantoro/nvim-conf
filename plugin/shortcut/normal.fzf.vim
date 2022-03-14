@@ -21,10 +21,6 @@ nmap <leader><leader>f :Rg<CR><CR>
 let g:which_key_map[' ']= {
       \ 'name' : '+more' ,
       \ 'f' : [':Rg'   , 'Find text on all file']      ,
-      \ 'h' : ['  h'   , 'Go to Screen left']      ,
-      \ 'l' : ['  l'   , 'Go to Screen right']      ,
-      \ 'j' : ['  j'   , 'Go to Screen down']      ,
-      \ 'k' : ['  k'   , 'Go to Screen up']      ,
       \ 'w' : ['  w'   , 'Go to vim wiki']      ,
       \ }
 
