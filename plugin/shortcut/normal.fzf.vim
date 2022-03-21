@@ -8,7 +8,8 @@ let $FZF_DEFAULT_COMMAND="find . -type f -not -path '*/\.git/*' ! -path '*/node_
 " fuzzy
 
 " just title
-nmap <leader>f :call fzf#run({'sink': 'e','options': "--border rounded --preview 'bat --style=numbers --color=always --line-range :500 {}' "})<CR><CR>
+" nmap <leader>f :call fzf#run({'sink': 'e','options': "--border rounded --preview 'bat --style=numbers --color=always --line-range :500 {}' "})<CR><CR>
+nmap <leader>f :FZF<CR>
 let g:which_key_map['f'] = [ ' f'  , 'Find file' ]
 
 " with content

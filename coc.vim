@@ -18,11 +18,16 @@ inoremap <silent><expr> <NUL> coc#refresh()
 
 inoremap <expr> <TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 inoremap <expr> <S-TAB> pumvisible() ? "\<C-p>" : "\<S-TAB>"
+inoremap <expr> <down> pumvisible() ? "\<C-n>" : "\<down>"
+inoremap <expr> <up> pumvisible() ? "\<C-p>" : "\<up>"
 
 " Make <CR> auto-select the first completion item and notify coc.nvim to
 " format on enter, <cr> could be remapped by other vim plugin
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
+" inoremap <silent><expr> <right> pumvisible() ? coc#_select_confirm()
+"                               \: "\<C-g>u\<right>\<c-r>=coc#on_enter()\<CR>"
 
 " Use <C-l> for trigger snippet expand.
 imap <C-l> <Plug>(coc-snippets-expand)

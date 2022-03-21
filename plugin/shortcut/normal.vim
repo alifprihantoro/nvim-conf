@@ -8,13 +8,13 @@ nmap <leader>w :w<CR>:e<CR>
 let g:which_key_map['w'] = ['w','Save' ]
 " tab
 " NERDTree
-nmap <leader>e :NERDTree<CR>
+nmap <leader>e :NERDTreeToggle<CR>
 let g:which_key_map['e'] = [':NERDTree','File Explorer' ]
 " --------------
 " vim wiki---------
 " toogle checklist fow vimwiki
-autocmd FileType wiki nnoremap <leader>- :VimwikiToggleListItem<CR>
-autocmd FileType wiki let g:which_key_map['-'] = [':VimwikiToggleListItem','Togle list' ]
+nnoremap <leader>' :VimwikiToggleListItem<CR>
+let g:which_key_map["'"] = [':VimwikiToggleListItem','Togle list' ]
 " change symbol
 autocmd FileType wiki nnoremap <leader>vs :VimwikiListChangeSymbolI
 autocmd FileType wiki let g:which_key_map['vs'] = [':VimwikiListChangeSymbolI','Show File/Folder' ]
@@ -55,4 +55,4 @@ let myconfig=plug_home."/nvim-conf/init.vim"
 nnoremap <leader>, :exec "e ".nvimplug."/nvim-conf/init.vim"<CR>:Cdn<CR>
 let g:which_key_map[','] = [' ,','Go to Config' ]
 " wiki
-nnoremap <leader><leader>w :e ~/wiki/development/index.wiki<CR>
+nnoremap <leader><leader>w :e ~/wiki/development/index.md<CR>
