@@ -7,3 +7,7 @@ inoremap <C-h> <Left>
 " if g:AutoPairsMapCh
   "   execute 'inoremap <buffer> <silent> <C-h> <C-R>=AutoPairsDelete()<CR>'
   " endif
+
+" github co pilot
+imap <C-[> <Plug>(copilot-previous) 
+imap <C-]> <Plug>(copilot-next) 

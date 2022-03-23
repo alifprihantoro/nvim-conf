@@ -35,5 +35,7 @@ Plug 'plasticboy/vim-markdown', { 'for': 'vimwiki' }
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'rbong/vim-flog'
+" copilot
+Plug 'github/copilot.vim'
 call plug#end()
 exec "source " . nvimplug . "/nvim-conf/coc.vim"

@@ -46,3 +46,4 @@ vmap ` di`<Esc>pi
 vmap ,f  <Plug>Neoformat
 " replace
 vmap <SPACE>s y:s
+vmap <leader>' :VimwikiToggleListItem<CR>
