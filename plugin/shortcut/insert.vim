@@ -9,5 +9,7 @@ inoremap <C-h> <Left>
   " endif
 
 " github co pilot
-imap <C-[> <Plug>(copilot-previous) 
-imap <C-]> <Plug>(copilot-next) 
+imap <C-[> <Plug>(copilot-previous)
+imap <C-]> <Plug>(copilot-next)
+imap <Esc> <Esc>
+
