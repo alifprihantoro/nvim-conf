@@ -191,3 +191,5 @@ let &t_ZH="\e[3m"
 let &t_ZR="\e[23m"
 let g:vim_matchtag_enable_by_default = 0
 let g:vim_matchtag_files = '*.html,*.xml,*.js,*.jsx,*.vue,*.svelte,*.jsp'
+" disble copilet
+au BufNewFile :Copilot disable<CR>

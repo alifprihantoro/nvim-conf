@@ -29,9 +29,9 @@ map <C-l> 20zl
 " scroll righ
 map <C-h> 20zh
 " firts line
-map <C-i> ^
+map <leader>i ^
 " last line
-map <C-a> $
+map <leader>a $
 
 " comment
 nmap <leader>/ <leader>c<leader>
