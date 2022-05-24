@@ -12,4 +12,4 @@ let g:vimwiki_key_mappings = {
             \ 'html': 1,
             \ 'mouse': 0,
             \ }
-
+let g:vimwiki_listsyms = ' .○◐●x'
