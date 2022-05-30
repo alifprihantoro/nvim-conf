@@ -36,6 +36,10 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'rbong/vim-flog'
 " copilot
-" Plug 'github/copilot.vim'
+Plug 'github/copilot.vim'
+
+" auto import
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'kristijanhusak/vim-js-file-import', {'do': 'npm install'}
 call plug#end()
 exec "source " . nvimplug . "/nvim-conf/coc.vim"

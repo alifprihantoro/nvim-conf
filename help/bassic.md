@@ -11,3 +11,5 @@
 - / = search to bottom
 - ? = search to top
 - <number>G = go to number
+- gd = go to same string on cursor
+- <C-o> : undo cursor position

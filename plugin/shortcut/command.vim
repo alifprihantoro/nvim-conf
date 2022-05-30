@@ -1,4 +1,5 @@
 " help
+command Help tabnew ~/.config/plugin/nvim-conf/help/home.md
 command Hb tabnew ~/.config/plugin/nvim-conf/help/vim/bassic.md
 command Hi tabnew ~/.config/plugin/nvim-conf/plugin/shortcut/insert.vim
 command Hn tabnew ~/.config/plugin/nvim-conf/plugin/shortcut/normal.vim
