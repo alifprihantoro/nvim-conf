@@ -83,9 +83,10 @@ $FZF_DEFAULT_COMMAND	plugin/shortcut/normal.fzf.vim	/^let $FZF_DEFAULT_COMMAND="
 <Del>	plugin/shortcut/normal.edit.vim	/^noremap <Del> v"_d$/;"	m
 <Del>	plugin/shortcut/visual.vim	/^vmap <Del> "_d$/;"	m
 <Esc>	plugin/shortcut/insert.vim	/^imap <Esc> <Esc>$/;"	m
-<Leader>jg	plugin/shortcut/normal.import.js.vim	/^nnoremap <Leader>jg <Plug>(JsGotoDefinition)$/;"	m
-<Leader>ji	plugin/shortcut/normal.import.js.vim	/^nnoremap <Leader>ji <Plug>(JsFileImport)$/;"	m
-<Leader>js	plugin/shortcut/normal.import.js.vim	/^nnoremap <Leader>js <Plug>(SortJsFileImport)$/;"	m
+<Leader>tg	plugin/shortcut/normal.import.js.vim	/^nnoremap <Leader>tg <Plug>(JsGotoDefinition)$/;"	m
+<Leader>ti	plugin/shortcut/normal.import.js.vim	/^nnoremap <Leader>ti <Plug>(JsFileImport)$/;"	m
+<Leader>tl	plugin/shortcut/normal.import.js.vim	/^nnoremap <Leader>tl :call Jsgoto()<CR>$/;"	m
+<Leader>ts	plugin/shortcut/normal.import.js.vim	/^nnoremap <Leader>ts <Plug>(SortJsFileImport)$/;"	m
 <NUL>	coc.vim	/^inoremap <silent><expr> <NUL> coc#refresh()$/;"	m
 <S-TAB>	coc.vim	/^inoremap <expr> <S-TAB> pumvisible() ? "\\<C-p>" : "\\<S-TAB>"$/;"	m
 <SPACE>s	plugin/shortcut/visual.vim	/^vmap <SPACE>s y:s$/;"	m
@@ -162,6 +163,7 @@ $FZF_DEFAULT_COMMAND	plugin/shortcut/normal.fzf.vim	/^let $FZF_DEFAULT_COMMAND="
 <leader>rb	plugin/shortcut/normal.edit.vim	/^nmap <leader>rb ve"_d$/;"	m
 <leader>re	plugin/shortcut/normal.edit.vim	/^nmap <leader>re vb"_d$/;"	m
 <leader>s	plugin/shortcut/normal.vim	/^nmap <leader>s :%s \/$/;"	m
+<leader>u	plugin/shortcut/normal.vim	/^nnoremap <leader>u <C-^>$/;"	m
 <leader>w	plugin/shortcut/normal.vim	/^nmap <leader>w :w<CR>:e<CR>$/;"	m
 <leader>x	coc.vim	/^xmap <leader>x  <Plug>(coc-convert-snippet)$/;"	m
 <leader>ya	plugin/shortcut/normal.edit.vim	/^nmap <leader>ya ggVG"+y$/;"	m
@@ -218,6 +220,7 @@ Hi	plugin/shortcut/command.vim	/^command Hi tabnew ~\/.config\/plugin\/nvim-conf
 Hn	plugin/shortcut/command.vim	/^command Hn tabnew ~\/.config\/plugin\/nvim-conf\/plugin\/shortcut\/normal.vim$/;"	c
 Hv	plugin/shortcut/command.vim	/^command Hv tabnew ~\/.config\/plugin\/nvim-conf\/plugin\/shortcut\/visual.vim$/;"	c
 Install	README.md	/^### Install$/;"	S	section:Configuration Nvim for web Developer
+Jsgoto	plugin/funct/js.vim	/^function! Jsgoto()$/;"	f
 NerdThree	docs/bassic.md	/^## NerdThree$/;"	s	chapter:miiain
 P	plugin/shortcut/visual.vim	/^vmap P "_dP$/;"	m
 Penggunaan git fetch dan pull	help/git/bassic.md	/^# Penggunaan git fetch dan pull$/;"	c
@@ -301,22 +304,25 @@ g:which_key_map	plugin/shortcut/normal.fold.vim	/^let g:which_key_map.z = {$/;"	
 g:which_key_map	plugin/shortcut/normal.fzf.vim	/^let g:which_key_map[' ']= {$/;"	v
 g:which_key_map	plugin/shortcut/normal.fzf.vim	/^let g:which_key_map['f'] = [ ' f'  , 'Find file' ]$/;"	v
 g:which_key_map	plugin/shortcut/normal.git.vim	/^let g:which_key_map.g = {$/;"	v
+g:which_key_map	plugin/shortcut/normal.import.js.vim	/^let g:which_key_map.t = {$/;"	v
 g:which_key_map	plugin/shortcut/normal.modif.vim	/^let g:which_key_map['m']= {$/;"	v
 g:which_key_map	plugin/shortcut/normal.vim	/^let g:which_key_map["'"] = [':VimwikiToggleListItem','Togle list' ]$/;"	v
 g:which_key_map	plugin/shortcut/normal.vim	/^let g:which_key_map[','] = [' ,','Go to Config' ]$/;"	v
 g:which_key_map	plugin/shortcut/normal.vim	/^let g:which_key_map['\/'] = [' c ','comment' ]$/;"	v
 g:which_key_map	plugin/shortcut/normal.vim	/^let g:which_key_map['cw'] = ['  cw','Word on line' ]$/;"	v
 g:which_key_map	plugin/shortcut/normal.vim	/^let g:which_key_map['e'] = [':NERDTree','File Explorer' ]$/;"	v
+g:which_key_map	plugin/shortcut/normal.vim	/^let g:which_key_map['q'] = [' q','quit' ]$/;"	v
 g:which_key_map	plugin/shortcut/normal.vim	/^let g:which_key_map['s'] = [' s','search' ]$/;"	v
+g:which_key_map	plugin/shortcut/normal.vim	/^let g:which_key_map['u'] = [' u','swich to file before' ]$/;"	v
 g:which_key_map	plugin/shortcut/normal.vim	/^let g:which_key_map['w'] = ['w','Save' ]$/;"	v
 g:which_key_map	plugin/shortcut/screen.vim	/^let g:which_key_map['-'] = [ ' -'  , 'Split Horizontal' ]$/;"	v
 g:which_key_map	plugin/shortcut/screen.vim	/^let g:which_key_map['<'] = [ ' <'  , 'Size screen right' ]$/;"	v
 g:which_key_map	plugin/shortcut/screen.vim	/^let g:which_key_map['>'] = [ ' >'  , 'Size screen left' ]$/;"	v
 g:which_key_map	plugin/shortcut/screen.vim	/^let g:which_key_map['\\'] = [ ' \\'  , 'Split Vertical' ]$/;"	v
-g:which_key_map	plugin/shortcut/screen.vim	/^let g:which_key_map['h'] = ['$','go to screen left' ]$/;"	v
-g:which_key_map	plugin/shortcut/screen.vim	/^let g:which_key_map['j'] = ['$','go to screen down' ]$/;"	v
-g:which_key_map	plugin/shortcut/screen.vim	/^let g:which_key_map['k'] = ['$','go to screen top' ]$/;"	v
-g:which_key_map	plugin/shortcut/screen.vim	/^let g:which_key_map['l'] = ['$','go to screen right' ]$/;"	v
+g:which_key_map	plugin/shortcut/screen.vim	/^let g:which_key_map['h'] = [' h','go to screen left' ]$/;"	v
+g:which_key_map	plugin/shortcut/screen.vim	/^let g:which_key_map['j'] = [' j','go to screen down' ]$/;"	v
+g:which_key_map	plugin/shortcut/screen.vim	/^let g:which_key_map['k'] = [' k','go to screen top' ]$/;"	v
+g:which_key_map	plugin/shortcut/screen.vim	/^let g:which_key_map['l'] = [' l','go to screen right' ]$/;"	v
 g:which_key_position	plugin/setting/whichkey.vim	/^let g:which_key_position = 'botright'$/;"	v
 g:which_key_sep	plugin/setting/whichkey.vim	/^let g:which_key_sep = '=>'$/;"	v
 g:which_key_use_floating_win	plugin/setting/whichkey.vim	/^let g:which_key_use_floating_win = 0$/;"	v

@@ -1,6 +1,7 @@
 let mapleader = " "
 " quit
 nmap <leader>q :q<CR>
+let g:which_key_map['q'] = [' q','quit' ]
 nmap qq :q<CR>
 nmap ; :
 " save
@@ -56,3 +57,6 @@ nnoremap <leader>, :exec "e ".nvimplug."/nvim-conf/init.vim"<CR>:Cdn<CR>
 let g:which_key_map[','] = [' ,','Go to Config' ]
 " wiki
 nnoremap <leader><leader>w :e ~/wiki/development/index.md<CR>
+" swich to file before
+nnoremap <leader>u <C-^>
+let g:which_key_map['u'] = [' u','swich to file before' ]

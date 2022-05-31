@@ -25,13 +25,13 @@ Plug 'mattn/emmet-vim', { 'for': 'html' }
 " Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 " -------------------------------------
 
-" hugo
-Plug 'alifprihantoro/vim-hugo', {'for': 'vimwiki' }
-Plug 'robertbasic/vim-hugo-helper' , { 'for': 'vimwiki' }
+" Plug 'robertbasic/vim-hugo-helper' , { 'for': 'vimwiki' }
 " Markdown support
 Plug 'godlygeek/tabular', { 'for': 'vimwiki' }
 Plug 'plasticboy/vim-markdown', { 'for': 'vimwiki' }
 " Plug 'dhruvasagar/vim-table-mode', { 'for': 'markdown' }
+" hugo
+Plug 'alifprihantoro/vim-hugo', {'for': 'vimwiki' }
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'rbong/vim-flog'
