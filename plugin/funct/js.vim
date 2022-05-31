@@ -1,12 +1,11 @@
 " option : "/' and tsx/jsx/mdx/etc
 function! Jsgoto()
-  normal gdyyggPgg
-  exe ":s/'//g"
-  exe ":s/;//g"
-  normal A.tsx
-  normal $vBy
+  let TYPE_FORMAT_FILE = '.tsx'
+  let PETIK = "'"
+  normal gd$vBy
   exe 'Cdn'
-  exe 'let Jsfile=@"'
-  normal dd
-  exe 'e '.Jsfile
-endfun
+  let Jsfile=@"
+  exe 'let Jsfile=substitute(Jsfile,"'.PETIK.'","","g")'
+  let Jsfile=substitute(Jsfile,";","","")
+  exe 'e '.Jsfile.TYPE_FORMAT_FILE
+endfun  
