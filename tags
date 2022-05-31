@@ -221,6 +221,7 @@ Hn	plugin/shortcut/command.vim	/^command Hn tabnew ~\/.config\/plugin\/nvim-conf
 Hv	plugin/shortcut/command.vim	/^command Hv tabnew ~\/.config\/plugin\/nvim-conf\/plugin\/shortcut\/visual.vim$/;"	c
 Install	README.md	/^### Install$/;"	S	section:Configuration Nvim for web Developer
 Jsgoto	plugin/funct/js.vim	/^function! Jsgoto()$/;"	f
+LetGit	plugin/shortcut/command.vim	/^command LetGit let DIRGIT=fnameescape(fnamemodify(finddir('.git', escape(expand('%:p:h'), ' ') ./;"	c
 NerdThree	docs/bassic.md	/^## NerdThree$/;"	s	chapter:miiain
 P	plugin/shortcut/visual.vim	/^vmap P "_dP$/;"	m
 Penggunaan git fetch dan pull	help/git/bassic.md	/^# Penggunaan git fetch dan pull$/;"	c

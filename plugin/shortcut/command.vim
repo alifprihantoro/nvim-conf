@@ -46,3 +46,5 @@ command Prettier CocCommand prettier.formatFile
 command! Bda %bdelete|edit#|bdelete#
 " cd git root
 command Cdg exec 'cd' fnameescape(fnamemodify(finddir('.git', escape(expand('%:p:h'), ' ') . ';'), ':h'))
+" variable git
+command LetGit let DIRGIT=fnameescape(fnamemodify(finddir('.git', escape(expand('%:p:h'), ' ') . ';'), ':h'))
