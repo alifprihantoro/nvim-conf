@@ -1,10 +1,13 @@
-function! Gs()
+function! Sg()
   let TYPE_FORMAT_FILE = '.scss'
   let PETIK = "'"
-  normal $vBy
-  exe 'Cdn'
+  normal $hbvey
+  let Scss_name_file=@"
+  normal hvBy
   let Scssfile=@"
   exe 'let Scssfile=substitute(Scssfile,"'.PETIK.'","","g")'
-  let Scssfile=substitute(Scssfile,";","","")
-  exe 'e _'.Scssfile.TYPE_FORMAT_FILE
+  execute "let dirNow=getcwd()"
+  exe 'Cdn'
+  exe 'e '.Scssfile.'_'.Scss_name_file.TYPE_FORMAT_FILE
+  execute "cd ".dirNow
 endfun  
