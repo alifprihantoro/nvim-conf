@@ -7,5 +7,6 @@ function! Jsgoto()
   let Jsfile=@"
   exe 'let Jsfile=substitute(Jsfile,"'.PETIK.'","","g")'
   let Jsfile=substitute(Jsfile,";","","")
+  exe "normal \<C-o>"
   exe 'e '.Jsfile.TYPE_FORMAT_FILE
 endfun  

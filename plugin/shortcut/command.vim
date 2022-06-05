@@ -1,10 +1,5 @@
 " help
 command Help tabnew ~/.config/plugin/nvim-conf/help/home.md
-command Hb tabnew ~/.config/plugin/nvim-conf/help/vim/bassic.md
-command Hi tabnew ~/.config/plugin/nvim-conf/plugin/shortcut/insert.vim
-command Hn tabnew ~/.config/plugin/nvim-conf/plugin/shortcut/normal.vim
-command Hv tabnew ~/.config/plugin/nvim-conf/plugin/shortcut/visual.vim
-command Hc tabnew ~/.config/plugin/nvim-conf/plugin/shortcut/command.vim
 
 " Plugin install 
 command Smain tabnew ~/.config/nvim/conf/plug/main.vim
@@ -48,3 +43,5 @@ command! Bda %bdelete|edit#|bdelete#
 command Cdg exec 'cd' fnameescape(fnamemodify(finddir('.git', escape(expand('%:p:h'), ' ') . ';'), ':h'))
 " variable git
 command LetGit let DIRGIT=fnameescape(fnamemodify(finddir('.git', escape(expand('%:p:h'), ' ') . ';'), ':h'))
+" reset css/scss/sass
+command Pstyle %s/[{;}]/&\r/g|%s/\n\n/\r/g|noh|norm! =gg

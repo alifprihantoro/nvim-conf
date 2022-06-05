@@ -213,20 +213,17 @@ Gflowfzf	plugin/shortcut/normal.git.vim	/^command! Gflowfzf execute "call fzf#ru
 Ghelp	plugin/funct/git.vim	/^command! Ghelp execute "e ". nvimplug ."\/nvim-conf\/help\/git\/home.md" $/;"	c
 Git	docs/bassic.md	/^## Git$/;"	s	chapter:miiain
 Gpushall	plugin/funct/git.vim	/^command! Gpushall !eval "$(ssh-agent -s)" && ssh-add ~\/.ssh\/github && git pushall$/;"	c
-Hb	plugin/shortcut/command.vim	/^command Hb tabnew ~\/.config\/plugin\/nvim-conf\/help\/vim\/bassic.md$/;"	c
-Hc	plugin/shortcut/command.vim	/^command Hc tabnew ~\/.config\/plugin\/nvim-conf\/plugin\/shortcut\/command.vim$/;"	c
 Help	plugin/shortcut/command.vim	/^command Help tabnew ~\/.config\/plugin\/nvim-conf\/help\/home.md$/;"	c
-Hi	plugin/shortcut/command.vim	/^command Hi tabnew ~\/.config\/plugin\/nvim-conf\/plugin\/shortcut\/insert.vim$/;"	c
-Hn	plugin/shortcut/command.vim	/^command Hn tabnew ~\/.config\/plugin\/nvim-conf\/plugin\/shortcut\/normal.vim$/;"	c
-Hv	plugin/shortcut/command.vim	/^command Hv tabnew ~\/.config\/plugin\/nvim-conf\/plugin\/shortcut\/visual.vim$/;"	c
 Install	README.md	/^### Install$/;"	S	section:Configuration Nvim for web Developer
 Jsgoto	plugin/funct/js.vim	/^function! Jsgoto()$/;"	f
+Jsgoto	plugin/funct/scss.vim	/^function! Jsgoto()$/;"	f
 LetGit	plugin/shortcut/command.vim	/^command LetGit let DIRGIT=fnameescape(fnamemodify(finddir('.git', escape(expand('%:p:h'), ' ') ./;"	c
 NerdThree	docs/bassic.md	/^## NerdThree$/;"	s	chapter:miiain
 P	plugin/shortcut/visual.vim	/^vmap P "_dP$/;"	m
 Penggunaan git fetch dan pull	help/git/bassic.md	/^# Penggunaan git fetch dan pull$/;"	c
 Prettier	plugin/shortcut/command.vim	/^command Prettier CocCommand prettier.formatFile$/;"	c
 Prettiern	plugin/shortcut/command.vim	/^command Prettiern Neoformat$/;"	c
+Pstyle	plugin/shortcut/command.vim	/^command Pstyle %s\/[{;}]\/&\\r\/g|%s\/\\n\\n\/\\r\/g|noh|norm! =gg$/;"	c
 Requirement	README.md	/^### Requirement$/;"	S	section:Configuration Nvim for web Developer
 Rg	plugin/shortcut/normal.fzf.vim	/^command! -bang -nargs=* Rg$/;"	c
 Sbassic	plugin/shortcut/command.vim	/^command Sbassic tabnew ~\/.config\/nvim\/conf\/init\/bassic.vim$/;"	c
