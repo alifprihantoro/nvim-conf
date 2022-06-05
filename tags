@@ -213,10 +213,11 @@ Gflowfzf	plugin/shortcut/normal.git.vim	/^command! Gflowfzf execute "call fzf#ru
 Ghelp	plugin/funct/git.vim	/^command! Ghelp execute "e ". nvimplug ."\/nvim-conf\/help\/git\/home.md" $/;"	c
 Git	docs/bassic.md	/^## Git$/;"	s	chapter:miiain
 Gpushall	plugin/funct/git.vim	/^command! Gpushall !eval "$(ssh-agent -s)" && ssh-add ~\/.ssh\/github && git pushall$/;"	c
+Gs	plugin/funct/scss.vim	/^function! Gs()$/;"	f
+Gs	plugin/shortcut/command.vim	/^command Gs call Sg$/;"	c
 Help	plugin/shortcut/command.vim	/^command Help tabnew ~\/.config\/plugin\/nvim-conf\/help\/home.md$/;"	c
 Install	README.md	/^### Install$/;"	S	section:Configuration Nvim for web Developer
 Jsgoto	plugin/funct/js.vim	/^function! Jsgoto()$/;"	f
-Jsgoto	plugin/funct/scss.vim	/^function! Jsgoto()$/;"	f
 LetGit	plugin/shortcut/command.vim	/^command LetGit let DIRGIT=fnameescape(fnamemodify(finddir('.git', escape(expand('%:p:h'), ' ') ./;"	c
 NerdThree	docs/bassic.md	/^## NerdThree$/;"	s	chapter:miiain
 P	plugin/shortcut/visual.vim	/^vmap P "_dP$/;"	m

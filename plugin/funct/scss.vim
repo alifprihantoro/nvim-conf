@@ -1,5 +1,4 @@
-" option : "/' and tsx/jsx/mdx/etc
-function! Jsgoto()
+function! Gs()
   let TYPE_FORMAT_FILE = '.scss'
   let PETIK = "'"
   normal $vBy
