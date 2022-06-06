@@ -8,7 +8,7 @@ hi cursorcolumn ctermfg=none ctermbg=233 cterm=none guifg=none guibg=#313335 gui
 hi colorcolumn ctermfg=none ctermbg=233 cterm=none guifg=none guibg=#313335 gui=none
 hi cursorlinenr ctermfg=none ctermbg=24 cterm=bold guifg=none guibg=#214283 gui=none
 hi vertsplit ctermfg=60 ctermbg=236 cterm=none guifg=#555555 guibg=#323232 gui=none
-hi MatchParen cterm=bold ctermfg=50 ctermbg=17 gui=underline guifg=red
+hi MatchParen cterm=bold ctermfg=188 ctermbg=26 gui=underline
 hi matchTag cterm=bold ctermfg=50 ctermbg=17 gui=underline guifg=red
 hi StatusLine ctermfg=67 ctermbg=236 cterm=bold guifg=#a9b7c6 guibg=#323232 gui=bold
 hi StatusLineNC ctermfg=188 ctermbg=236 cterm=NONE guifg=#a9b7c6 guibg=#323232 gui=NONE
