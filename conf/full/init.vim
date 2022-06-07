@@ -1,3 +1,5 @@
+" change dir for default plugin
+let g:nvimplug = "~/.config/plugin"
 " __________________________________________|
 exec "call plug#begin(\"". nvimplug . "\")"
 exec "source ".nvimplug."/nvim-conf/conf/full/plug.vim"

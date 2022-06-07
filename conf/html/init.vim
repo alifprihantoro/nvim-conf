@@ -1,3 +1,5 @@
+" change dir for default plugin
+let g:nvimplug = "~/.config/plugin"
 " __________________________________________|
 exec "call plug#begin(\"". nvimplug . "\")"
 " ---------- bassic 
