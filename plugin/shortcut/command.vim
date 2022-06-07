@@ -1,23 +1,7 @@
 " help
-command Help tabnew ~/.config/plugin/nvim-conf/help/home.md
-
-" Plugin install 
-command Smain tabnew ~/.config/nvim/conf/plug/main.vim
-" coc init
-command Scoc tabnew ~/.config/nvim/conf/init/tab-coc.vim
-" bassic init
-command Sbassic tabnew ~/.config/nvim/conf/init/bassic.vim
-" wiki init
-command Swiki tabnew ~/.config/nvim/conf/init/wiki.vim
-" theme
-command Sthem tabnew ~/.config/nvim/conf/style/them.vim
-" html higligh
-command Shi tabnew ~/.config/nvim/conf/style/html.vim
-command Shi2 tabnew ~/.config/nvim/conf/style/style.vim
-
+command Help exe 'tabnew '.nvimplug.'/nvim-conf/help/home.md'
 " Vimwiki
 " plugin on wiki
-command Wo source ~/.config/nvim/app/wiki.vim
 command W1 e ~/wiki/development/index.wiki
 " wiki list
 command Wl VimwikiUISelect
@@ -33,8 +17,6 @@ command Diarydir e ~/wiki/private/diary/diary.wiki
 command Diaryadd source ~/.config/nvim/app/wiki.vim
 " add link diary
 command Diarylink VimwikiDiaryGenerateLinks
-" Prettier
-command Prettiern Neoformat
 " Prettier
 command Prettier CocCommand prettier.formatFile
 " close all buffer without current
