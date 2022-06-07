@@ -1,6 +1,6 @@
 " __________________________________________|
 exec "call plug#begin(\"". nvimplug . "\")"
-exec "source ".nvimplug."/nvim-conf/plug.vim"
+exec "source ".nvimplug."/nvim-conf/conf/full/plug.vim"
 Plug 'jiangmiao/auto-pairs' 
 " Use release branch (recommend)
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -39,4 +39,3 @@ Plug 'rbong/vim-flog'
 Plug 'github/copilot.vim'
 
 call plug#end()
-exec "source " . nvimplug . "/nvim-conf/coc.vim"

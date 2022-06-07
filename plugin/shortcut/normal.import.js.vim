@@ -7,7 +7,6 @@ function! ShowDocumentation()
 endfunction
 " Use K to show documentation in preview window.
 nnoremap <silent> K :call ShowDocumentation()<CR>
-
 nnoremap <silent> <Leader>tl :call Jsgoto()<CR>
 nmap <silent> <leader>tg <Plug>(coc-definition)
 nmap <silent> <leader>ti <Plug>(coc-fix-current)
