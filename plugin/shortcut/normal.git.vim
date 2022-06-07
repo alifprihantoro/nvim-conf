@@ -4,7 +4,7 @@ nmap <leader>gf :GitFiles<CR>
 " Git log
 nmap <leader>gl :Gclog<CR>
 " Git Push
-nmap <leader>gp :Git pushall<CR>
+nmap <leader>gp :Gpushall<CR>
 " add
 nmap <leader>ga :Git add .<CR>
 " Git exit Commit
