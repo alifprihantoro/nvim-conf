@@ -15,9 +15,9 @@ nmap <leader>rb ve"_d
 nmap <leader>ra ggVG"_d
 let g:which_key_map.r = {
       \ 'name' : '+delete' ,
-      \ 'a' : ['ggVG"_d' , 'delete all text into clipboard']      ,
-      \ 'b' : ['ve"_d' , 'delete word into clipboard (after)']      ,
-      \ 'e' : ['vb"_d' , 'delete word into clipboard (before)']      ,
+      \ 'a' : [' ra' , 'delete all text into clipboard']      ,
+      \ 'b' : [' ra' , 'delete word into clipboard (after)']      ,
+      \ 'e' : [' re' , 'delete word into clipboard (before)']      ,
       \ }
 " delete line
 nmap <leader><Del> V"_d

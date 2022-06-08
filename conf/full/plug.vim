@@ -1,4 +1,5 @@
 " ---------- bassic 
+" myconfig
 Plug 'alifprihantoro/nvim-conf'
 Plug 'liuchengxu/vim-which-key'
 Plug 'preservim/nerdcommenter'

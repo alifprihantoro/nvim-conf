@@ -14,13 +14,19 @@ Plug 'preservim/nerdcommenter'
 " File Explorer with Icons
   Plug 'ryanoasis/vim-devicons', { 'on':  'NERDTreeToggle' }
   Plug 'Xuyuanp/nerdtree-git-plugin' , { 'on':  'NERDTreeToggle' }
-" ---------- indentLine
-Plug 'lukas-reineke/indent-blankline.nvim'
-" Wiki / to do list / note
-Plug 'vimwiki/vimwiki'
+" fuzzy finder
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'jiangmiao/auto-pairs' 
+
+" ---------- indentLine
+Plug 'lukas-reineke/indent-blankline.nvim'
+
+" Wiki / to do list / note
+Plug 'vimwiki/vimwiki'
+
+" auto pair [],(),etc
+Plug 'jiangmiao/auto-pairs'
+
 " Use release branch (recommend)
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " ---------- js plug

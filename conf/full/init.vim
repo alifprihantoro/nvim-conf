@@ -3,7 +3,7 @@ let g:nvimplug = "~/.config/plugin"
 " __________________________________________|
 exec "call plug#begin(\"". nvimplug . "\")"
 exec "source ".nvimplug."/nvim-conf/conf/full/plug.vim"
-Plug 'jiangmiao/auto-pairs' 
+Plug 'jiangmiao/auto-pairs'
 " Use release branch (recommend)
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " ---------- js plug
@@ -22,12 +22,6 @@ Plug 'cespare/vim-toml', { 'for': 'toml' }
 " html/emmet snippet
 Plug 'mattn/emmet-vim', { 'for': 'html' }
 
-" " color css
-" Plug 'ap/vim-css-color', { 'on':'ColorCss' }A
-" Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
-" -------------------------------------
-
-" Plug 'robertbasic/vim-hugo-helper' , { 'for': 'vimwiki' }
 " Markdown support
 Plug 'godlygeek/tabular', { 'for': 'vimwiki' }
 Plug 'plasticboy/vim-markdown', { 'for': 'vimwiki' }

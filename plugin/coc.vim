@@ -22,3 +22,13 @@ function! HandleURL()
   endif
 endfunction
 map <leader>u :call HandleURL()<cr>
+
+" show docs info
+function! ShowDocumentation()
+  if CocAction('hasProvider', 'hover')
+    call CocActionAsync('doHover')
+  else
+    call feedkeys('K', 'in')
+  endif
+endfunction
+
