@@ -29,3 +29,5 @@ command LetGit let DIRGIT=fnameescape(fnamemodify(finddir('.git', escape(expand(
 command Pstyle %s/[{;}]/&\r/g|%s/\n\n/\r/g|noh|norm! =gg
 " go to import file scss
 command Gs call Sg()
+" vim plug go to
+command Gplugvim call Goplugvim()
