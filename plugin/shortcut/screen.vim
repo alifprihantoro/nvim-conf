@@ -1,4 +1,3 @@
-nmap <leader>| <C-w>v
 let g:which_key_map['\'] = [ ' |'  , 'Split Vertical' ]
 nmap <leader>- <C-w>s
 let g:which_key_map['-'] = [ ' -'  , 'Split Horizontal' ]

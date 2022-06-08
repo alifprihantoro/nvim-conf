@@ -3,7 +3,6 @@
 " Initial settings
 " =====================================
 set number
-syntax enable
 set noswapfile
 set fileencodings=utf-8,sjis,euc-id,latin
 set encoding=utf-8
@@ -90,6 +89,8 @@ filetype on
 filetype plugin on
 " indents
 filetype indent on
+syntax on
+syntax enable
 set shiftwidth=2
 set tabstop=2
 " Set tabs and indents (for go)
