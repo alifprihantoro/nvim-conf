@@ -25,7 +25,7 @@ vmap <Space>tc <Plug>VimwikiToggleListItem<CR>
 vmap <Space>vs :VimwikiListChangeSymbolI 
 
 " seach
-vmap / y/<C-R>"<CR> 
+vmap / y/<C-R>"<CR>
 " replace
 vmap <Space>s y:%s /<C-R>"/
 

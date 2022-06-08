@@ -48,15 +48,6 @@ set hidden
 set confirm
 set wildmenu wildmode=full
 
-" markdown
-set conceallevel=2
-" https://github.com/plasticboy/vim-markdown
-let g:markdown_fenced_languages = ['coffee', 'css', 'erb=eruby', 'javascript', 'js=javascript', 'json=javascript', 'ruby', 'sass', 'xml']
-let g:vim_markdown_folding_disabled = 1
-let g:vim_markdown_frontmatter = 1
-let g:vim_markdown_follow_anchor = 1
-let g:vim_markdown_new_list_item_indent = 2
-
 " auto switch current working directory to current buffer (not recommended)
 autocmd BufEnter * :cd %:p:h
 
