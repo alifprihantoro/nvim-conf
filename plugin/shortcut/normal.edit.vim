@@ -3,6 +3,10 @@
 nmap ya ggVGy
 " cut all
 nmap da ggVGd
+" cut line
+nmap <leader>dy bve"+d
+" cut all
+nmap <leader>da ggVG"+d
 " cut --------------
 " just cut
 noremap <BS> v"_d
@@ -36,3 +40,7 @@ let g:which_key_map.y = {
       \ 'y' : [' yy'   , 'copy line into clipboard']      ,
       \ 'a' : [' ya'   , 'copy all text into clipboard']      ,
       \ }
+
+" comment
+nmap <leader>/ <leader>c<leader>
+let g:which_key_map['/'] = [' c ','comment' ]

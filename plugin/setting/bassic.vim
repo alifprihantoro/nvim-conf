@@ -2,6 +2,23 @@
 " =====================================
 " Initial settings
 " =====================================
+set number
+syntax enable
+set noswapfile
+set fileencodings=utf-8,sjis,euc-id,latin
+set encoding=utf-8
+set title
+set autoindent
+set background=dark
+set nobackup
+set showcmd
+set cmdheight=1
+set laststatus=2
+set scrolloff=10
+set expandtab
+"let loaded_matchparen = 1
+set shell=zsh
+set backupskip=/tmp/*,/private/tmp/*
 " Relax file compatibility restriction with original vi
 " (not necessary to set with neovim, but useful for vim)
 set nocompatible
@@ -10,12 +27,8 @@ set go+=a
 "Disable beep / flash
 set vb t_vb=
 
-" Set tabs and indents (for go)
-set ts=4
-set ai sw=4
 
 " replace tab with spaces
-"set expandtab
 " allow cursor to move to beginning of tab
 " will interfere with soft line wrapping (set nolist)
 set list lcs=tab:\ \ 
@@ -30,14 +43,6 @@ set ruler
 
 "disable showmode since using vim-airline; otherwise use 'set showmode'
 set noshowmode
-
-" file type recognition
-filetype on
-filetype plugin on
-filetype indent on
-
-" syntax highlighting
-syntax on
 
 " scroll a bit horizontally when at the end of the line
 set sidescroll=6
@@ -55,32 +60,12 @@ autocmd BufEnter * :cd %:p:h
 set splitright
 set splitbelow
 
-" Use Ag (the silver searcher) instack of Ack
-let g:ackprg = 'ag --nogroup --nocolor --column'
-
 " init autocmd
 autocmd!
 " set script encoding
 scriptencoding utf-8
 " stop loading config if it's on tiny or small
 if !1 | finish | endif
-
-set number
-syntax enable
-set fileencodings=utf-8,sjis,euc-id,latin
-set encoding=utf-8
-set title
-set autoindent
-set background=dark
-set nobackup
-set showcmd
-set cmdheight=1
-set laststatus=2
-set scrolloff=10
-set expandtab
-"let loaded_matchparen = 1
-set shell=bash
-set backupskip=/tmp/*,/private/tmp/*
 
 " incremental substitution (neovim)
 if has('nvim')
@@ -100,37 +85,18 @@ set mat=2
 set ignorecase
 " Be smart when using tabs ;)
 set smarttab
+" file type recognition
+filetype on
+filetype plugin on
 " indents
 filetype indent on
 set shiftwidth=2
 set tabstop=2
-set ai "Auto indent
+" Set tabs and indents (for go)
+set ts=4
+set ai sw=4
 set si "Smart indent
 set backspace=start,eol,indent
-" Finding files - Search down into subfolders
-set path+=**
-set wildignore+=*/node_modules/*
-
-
-" Add asterisks in block comments
-set formatoptions+=r
-
-set suffixesadd=.js,.es,.jsx,.json,.css,.less,.sass,.styl,.php,.py,.md
-
-autocmd FileType coffee setlocal shiftwidth=2 tabstop=2
-autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
-autocmd FileType yaml setlocal shiftwidth=2 tabstop=2
-
-" JavaScript
-au BufNewFile,BufRead *.es6 setf javascript
-" TypeScript
-au BufNewFile,BufRead *.tsx setf typescript
-" Markdown
-au BufNewFile,BufRead *.md set filetype=markdown
-" Markdown
-au BufNewFile,BufRead *.wiki set filetype=wiki
-" Flow
-au BufNewFile,BufRead *.flow set filetype=javascript
 
 "-------------------------------------------------------------------------------
 " Cursor line
@@ -153,13 +119,6 @@ if &term =~ "screen"
   autocmd BufEnter * if bufname("") !~ "^?[A-Za-z0-9?]*://" | silent! exe '!echo -n "\ek[`hostname`:`basename $PWD`/`basename %`]\e\\"' | endif
   autocmd VimLeave * silent!  exe '!echo -n "\ek[`hostname`:`basename $PWD`]\e\\"'
 endif
-
-"-------------------------------------------------------------------------------
-let g:auto_save = 1  " enable AutoSave on Vim startup
-set noswapfile
-" setlocal foldmethod=indent
-" set nofoldenable
-
 " ------------- tag change
 " The `<c-u>` removes the current visual mode, so a function can be called
 xnoremap <buffer> p :<c-u>call <SID>Paste()<cr>
@@ -181,6 +140,4 @@ let g:indentLine_char_list = ['┆']
 let &t_ZH="\e[3m"
 let &t_ZR="\e[23m"
 let g:vim_matchtag_enable_by_default = 0
-let g:vim_matchtag_files = '*.html,*.xml,*.js,*.jsx,*.vue,*.svelte,*.jsp'
-" disble copilet
-au BufNewFile :Copilot disable<CR>
+let g:vim_matchtag_files = '*.html,*.xml,*.js,*.tsx,*.jsx,*.vue,*.svelte,*.jsp'
