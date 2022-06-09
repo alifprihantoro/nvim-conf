@@ -2,7 +2,7 @@
 " complete {}
 vmap <Space>{ di{<Esc>pi
 " complete <>
-vmap <Space>< di<<Esc>pa>
+vmap <Space>< di<><Esc>pa
 " complete ""
 vmap <Space>" di"<Esc>pi
 " complete []
