@@ -160,6 +160,43 @@ alias vm='nvim -u $PATH_PLUG_VIM/md/init.vim'
 - `ctrl-n` or `arrow` = autocomplete
 - `ctrl-p` or `arrow` = undo complete
 
+## myconfig coc
+```json
+{
+  "snippets.ultisnips.enable": false,
+  "coc.preferences.jumpCommand": "tabe",
+  "css.lint.duplicateProperties": "warning",
+  "html-css-support.enabledLanguages": [
+    "html",
+    "vue",
+    "blade",
+    "htmldjango",
+    "typescriptreact",
+    "javascriptreact"
+  ],
+  "html.filetypes": [
+    "html",
+    "handlebars",
+    "htmldjango",
+    "blade",
+    "typescriptreact",
+    "javascriptreact"
+  ],
+  "snippets.extends": {
+    "cpp": ["c"],
+    "javascriptreact": ["javascript"],
+    "typescript": ["javascript"],
+    "css": ["tailwind"],
+    "scss": ["tailwind"],
+    "sass": ["tailwind"],
+    "vimwiki ": ["markdown"],
+    "html ": ["hugo"],
+    "toml": ["hugo"]
+  }
+}
+
+```
+
 ## auto save
 
 type `:Cocconfig` and paste this code
@@ -176,6 +213,9 @@ type `:Cocconfig` and paste this code
   ]
 }
 ```
+
+## tailwindcss html/react
+- cp `tailwindHtml.json` into `~/.config/coc/extensions/node_modules/coc-html-css-support/customData/alpinejs` 
 
 ## source
 
