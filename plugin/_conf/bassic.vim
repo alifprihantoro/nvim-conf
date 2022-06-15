@@ -94,8 +94,8 @@ syntax enable
 set shiftwidth=2
 set tabstop=2
 " Set tabs and indents (for go)
-set ts=4
-set ai sw=4
+set ts=2
+set ai sw=2
 set si "Smart indent
 set backspace=start,eol,indent
 
