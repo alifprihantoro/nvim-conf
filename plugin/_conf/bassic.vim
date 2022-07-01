@@ -25,7 +25,7 @@ set go+=a
 
 "Disable beep / flash
 set vb t_vb=
-
+set mouse=a
 
 " replace tab with spaces
 " allow cursor to move to beginning of tab
